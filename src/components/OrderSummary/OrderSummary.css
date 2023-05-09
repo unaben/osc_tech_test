@@ -10,6 +10,10 @@
   min-height: 400px;
 }
 
+.order-frame h2 {
+  text-align: center;
+}
+
 .btn-container {
   width: 100%;
   display: flex;

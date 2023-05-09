@@ -42,7 +42,7 @@ const CartItems: FC<ICartItemProps> = ({ cartStock, setCartStock }) => {
           </button>
         </div>
       </div>
-      <div className="flexbox">
+      <div className="cartList-content">
         <div className="cartList-container">
           {cartStock.length === 0 ? (
             <h2>No item in cart</h2>

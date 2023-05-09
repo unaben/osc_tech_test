@@ -7,11 +7,18 @@
   border: 1px solid whitesmoke;
   padding: 0.7em;
   border-radius: 0.7rem;
-  height: 400px;
+  min-height: 400px;
 }
 
 .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .order-frame {
+    margin-top: 1rem;
+    width: fit-content;
+  }
 }

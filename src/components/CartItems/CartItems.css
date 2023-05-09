@@ -7,7 +7,7 @@
 }
 
 .cart-item-frame {
-  height: 120px;
+  min-height: 120px;
   border-bottom: 1px solid whitesmoke;
   margin-bottom: 10px;
 }
@@ -21,8 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 0px 20px;
+  height: fit-content;
 }
 
 .btn-container button a {
@@ -35,11 +35,17 @@
   width: 70%;
 }
 
-.cartList-content{
+.cartList-content {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .clear-cart-btn:hover {
   background-color: #830d0d;
+}
+
+@media only screen and (max-width: 960px) {
+  .btn-container,
+  .cartList-content {
+    flex-direction: column;
+  }
 }

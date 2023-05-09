@@ -44,3 +44,23 @@
 .delete-icon:hover {
   color: #830d0d;
 }
+
+@media only screen and (max-width: 960px) {
+  .btn-icon-container {
+    margin-top: 0rem;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .delete-icon{
+    margin-left: 1rem;
+  }
+
+  .cartList-frame {
+    display: block;
+  }
+
+  .mt {
+    margin: 1rem 0rem;
+  }
+}

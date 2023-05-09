@@ -1,6 +1,7 @@
 .promo-text-container {
-  height: 2.5rem;
   min-height: 2.5rem;
+  min-height: 2.5rem;
+  width: 100%;
   background: whitesmoke;
   color: #1a1212;
   padding: 0.2em 0em;

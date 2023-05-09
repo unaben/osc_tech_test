@@ -3,7 +3,11 @@ import "./App.css";
 import AppRoutes from "./components/AppRoutes/AppRoutes";
 
 const App = () => {
-  return <AppRoutes />;
+  return (
+    <div className="app-container">
+      <AppRoutes />
+    </div>
+  );
 };
 
 export default App;

@@ -1,10 +1,11 @@
 import React from "react";
 import "./PromoText.css";
+import { message } from "../../translate/ENT";
 
 const PromoText = () => {
   return (
     <div className="promo-text-container display-flex">
-      <p>Super Offer! Free shipping on order over £50</p>
+      <p>{message.offer}</p>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import GetProducts from "../../api/GetProducts";
 import useSearch from "../../hook/useSearch";
 import { useState } from "react";
 import SearchProduct from "../SearchInput/SearchInput";
+import { TbInfoOctagon } from "react-icons/tb";
 import "./ProductsList.css";
 
 const StoreItems = () => {
@@ -21,16 +22,14 @@ const StoreItems = () => {
           return (
             <div className="card" key={item?.node.id}>
               <div className="card-image">
-                <Link to={`/details/${id}`}>
-                  <img
-                    src={item.node.featuredImage?.url}
-                    alt={item?.node.title}
-                  />
-                </Link>
+                <img
+                  src={item.node.featuredImage?.url}
+                  alt={item?.node.title}
+                />
               </div>
               <div className="card-text">
                 <h1>{item?.node.title}</h1>
-                <div>
+                <div >
                   <p>
                     {formatCurrency(
                       parseFloat(
@@ -38,6 +37,11 @@ const StoreItems = () => {
                       )
                     )}
                   </p>
+                  <Link to={`/details/${id}`}>
+                    <i>
+                      <TbInfoOctagon />
+                    </i>
+                  </Link>
                 </div>
               </div>
             </div>

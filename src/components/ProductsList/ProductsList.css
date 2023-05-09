@@ -31,3 +31,8 @@
 .card-text {
   line-height: 1.5;
 }
+
+.card-text a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}

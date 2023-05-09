@@ -49,15 +49,22 @@
   .btn-icon-container {
     margin-top: 0rem;
     flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-around;
     flex-wrap: nowrap;
   }
 
-  .delete-icon{
+  .delete-icon {
     margin-left: 1rem;
   }
 
   .cartList-frame {
     display: block;
+  }
+
+  .item-container {
+    display: block;
+    padding: 0%;
   }
 
   .mt {

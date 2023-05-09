@@ -5,6 +5,7 @@ import { formatCurrency } from "../../utilities/currencyFormatter";
 import { addProduct, findItem, removeProduct } from "../../helper/helper";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import "./CartList.css";
+import { message } from "../../translate/ENT";
 
 type ICartListProps = {
   item: IVariantProduct;
@@ -29,10 +30,10 @@ const CartList: FC<ICartListProps> = ({
       </div>
       <div className="item-container">
         <div className="item-frame">
-          <p className="mt">Product: {item?.title} </p>
-          <p className="mt">ID: {item?.id}</p>
+          <p className="mt">{message.product}: {item?.title} </p>
+          <p className="mt">{message.id}: {item?.id}</p>
           <p className="mt">
-            Price: {""}
+            {message.price}: {""}
             {formatCurrency(
               parseFloat(
                 foundProduct?.node.variants.edges[0]?.node.price.amount!

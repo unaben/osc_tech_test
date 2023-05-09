@@ -5,6 +5,7 @@ import { formatCurrency } from "../../utilities/currencyFormatter";
 
 import "./OrderSummary.css";
 import { Link } from "react-router-dom";
+import { message } from "../../translate/ENT";
 
 type IOrderSummaryProps = {
   cartStock: IVariantProduct[];
@@ -18,24 +19,24 @@ const OrderSummary: FC<IOrderSummaryProps> = ({ cartStock, setCartStock }) => {
   return (
     <div className="order-container">
       <div className="order-frame">
-        <h2 className="upper mt" style={{ textAlign: "center" }}>
-          Order Summary
-        </h2>
+        <h2 className="upper mt">{message.orderSummary}</h2>
         <p className="mt ps">
-          Tax: {formatCurrency(parseFloat(tax?.toFixed(2)))}
+          {message.tax}: {formatCurrency(parseFloat(tax?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          Shipping: {formatCurrency(parseFloat(shipping?.toFixed(2)))}
+          {message.shipping}: {formatCurrency(parseFloat(shipping?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          Total Price: {formatCurrency(parseFloat(totalItemPrices?.toFixed(2)))}
+          {message.totalPrice}: {" "}
+          {formatCurrency(parseFloat(totalItemPrices?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          Grand Total: {formatCurrency(parseFloat(grandTotal?.toFixed(2)))}
+          {message.grandTotal}: {" "}
+          {formatCurrency(parseFloat(grandTotal?.toFixed(2)))}
         </p>
         <div className="btn-container">
           <button onClick={() => setCartStock([])} className="upper btn">
-            <Link to={"/checkout"}>Complete Checkout</Link>
+            <Link to={"/checkout"}>{message.continueShopping}</Link>
           </button>
         </div>
       </div>

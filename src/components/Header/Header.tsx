@@ -5,6 +5,7 @@ import { IVariantProduct } from "../../model/interface";
 import { allCalculation } from "../../helper/helper";
 import "./Header.css";
 import PromoText from "../PromoText/PromoText";
+import { message } from "../../translate/ENT";
 
 type IHeaderProps = {
   cartStock: IVariantProduct[];
@@ -16,7 +17,7 @@ const Header: FC<IHeaderProps> = ({ cartStock }) => {
       <div className="header-container">
         <div className="display-flex">
           <Link to={"/"}>
-            <h1>CollectionX</h1>
+            <h1>{message.title}</h1>
           </Link>
         </div>
         <div className="display-flex">
@@ -24,7 +25,7 @@ const Header: FC<IHeaderProps> = ({ cartStock }) => {
             <ul className="display-flex">
               <li style={{ margin: "0 10px" }}>
                 <Link style={{ color: "white" }} to="/">
-                  Store
+                  {message.store}
                 </Link>
               </li>
             </ul>
@@ -34,7 +35,9 @@ const Header: FC<IHeaderProps> = ({ cartStock }) => {
               <i className="icon">
                 <FaShoppingCart />
               </i>
-              <span>Cart({itemQty})</span>
+              <span>
+                {message.cart}({itemQty})
+              </span>
             </Link>
           </button>
         </div>

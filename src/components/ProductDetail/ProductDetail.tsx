@@ -5,6 +5,7 @@ import { IVariantProduct } from "../../model/interface";
 import { FC } from "react";
 import { addProduct, removeProduct } from "../../helper/helper";
 import "./ProductDetail.css";
+import { message } from "../../translate/ENT";
 
 type IProductDetailsProps = {
   cartStock: IVariantProduct[];
@@ -31,7 +32,7 @@ const ProductDetail: FC<IProductDetailsProps> = ({
     <>
       <div className="detail-container">
         <button className="upper btn bg">
-          <Link to="/">Continue Shopping</Link>
+          <Link to="/">{message.continueShopping}</Link>
         </button>
       </div>
       <div className="product-container">
@@ -69,7 +70,7 @@ const ProductDetail: FC<IProductDetailsProps> = ({
           </div>
           <div>
             <button onClick={() => handleAddProduct()} className="add-btn">
-              Add to cart
+             {message.addToCart}
             </button>
           </div>
         </div>

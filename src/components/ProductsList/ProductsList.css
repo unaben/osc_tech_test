@@ -1,0 +1,33 @@
+.store-container {
+  max-width: fit-content;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding-bottom: 1.8em;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  padding: 0.7em;
+  margin-top: 1.2rem;
+  background-color: #5652a1;
+  color: white;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 300px;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  line-height: 1.5;
+}

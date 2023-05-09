@@ -1,0 +1,11 @@
+.promo-text-container {
+  height: 2.5rem;
+  min-height: 2.5rem;
+  background: whitesmoke;
+  color: #1a1212;
+  padding: 0.2em 0em;
+}
+
+.promo-text-container p {
+  font-size: 1.5rem;
+}

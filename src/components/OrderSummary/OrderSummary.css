@@ -1,0 +1,17 @@
+.order-container {
+  width: 30%;
+}
+
+.order-frame {
+  width: 100%;
+  border: 1px solid whitesmoke;
+  padding: 0.7em;
+  border-radius: 0.7rem;
+  height: 400px;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

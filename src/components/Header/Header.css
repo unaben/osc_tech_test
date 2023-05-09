@@ -1,0 +1,26 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background: #1b173a;
+  color: white;
+  padding: 0em 1.2em;
+}
+
+.header-container a {
+  color: white;
+}
+
+.m {
+  margin: 0 0.8rem;
+}
+
+.add-btn a {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 1rem;
+}

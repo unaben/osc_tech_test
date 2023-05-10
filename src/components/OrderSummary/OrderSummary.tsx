@@ -4,7 +4,7 @@ import { allCalculation } from "../../helper/helper";
 import { formatCurrency } from "../../utilities/currencyFormatter";
 
 import "./OrderSummary.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { message } from "../../translate/ENT";
 
 type IOrderSummaryProps = {
@@ -15,6 +15,13 @@ type IOrderSummaryProps = {
 const OrderSummary: FC<IOrderSummaryProps> = ({ cartStock, setCartStock }) => {
   const { totalItemPrices, tax, shipping, grandTotal } =
     allCalculation(cartStock);
+
+  const navigate = useNavigate();
+
+  const handleCompleteCheckout = () => {
+    setCartStock([]);
+    navigate(`/checkout`);
+  };
 
   return (
     <div className="order-container">
@@ -27,16 +34,20 @@ const OrderSummary: FC<IOrderSummaryProps> = ({ cartStock, setCartStock }) => {
           {message.shipping}: {formatCurrency(parseFloat(shipping?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          {message.totalPrice}: {" "}
+          {message.totalPrice}:{" "}
           {formatCurrency(parseFloat(totalItemPrices?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          {message.grandTotal}: {" "}
+          {message.grandTotal}:{" "}
           {formatCurrency(parseFloat(grandTotal?.toFixed(2)))}
         </p>
         <div className="btn-container">
-          <button onClick={() => setCartStock([])} className="upper btn">
-            <Link to={"/checkout"}>{message.continueShopping}</Link>
+          <button
+            disabled={totalItemPrices <= 0}
+            onClick={handleCompleteCheckout}
+            className="upper btn"
+          >
+            {message.completeCheckout}
           </button>
         </div>
       </div>

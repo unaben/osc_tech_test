@@ -19,10 +19,6 @@ const CartItems: FC<ICartItemProps> = ({ cartStock, setCartStock }) => {
     setCartStock(cartStock.filter((item) => item.id !== id));
   };
 
-  const removeCartItems = () => {
-    setCartStock([]);
-  };
-
   return (
     <div className="cart-item-container">
       <div className="cart-item-frame">
@@ -32,11 +28,14 @@ const CartItems: FC<ICartItemProps> = ({ cartStock, setCartStock }) => {
             <Link to="/">{message.continueShopping}</Link>
           </button>
           <div className="flexbox">
-            <p className="gap">{message.shoppingBasket} ({itemQty})</p>
+            <p className="gap">
+              {message.shoppingBasket} ({itemQty})
+            </p>
             <p>{message.yourWishList} (0)</p>
           </div>
           <button
-            onClick={removeCartItems}
+            disabled={!cartStock}
+            onClick={() => setCartStock([])}
             className="upper btn clear-cart-btn"
           >
             {message.clearCart}

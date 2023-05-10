@@ -16,7 +16,7 @@ export const message = {
   shoppingBasket: "Shopping bag",
   yourWishList: "Your wish list",
   offer: "Super offer! free shipping on order over £50",
-  store: "store",
+  store: "Store",
   cart: "cart",
   title: "ColletionX",
   checkoutMessage: "Thanks for shopping with us today",

@@ -8,23 +8,25 @@
   height: 300px;
   max-width: 80%;
   width: 800px;
-  background-color: whitesmoke;
+  background-color: var(--color-snow);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 1rem;
-  padding: 0 0.6em;
+  padding: 0 1em;
 }
 
 .checkout-container p {
+  color: var(--color-dark);
   font-size: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 .checkout-bg {
-  background: #191414 !important;
+  background: var(--color-dark) !important;
 }
 
 .checkout-frame button a {
-  color: white !important;
+  color: var(--color-snow) !important;
 }

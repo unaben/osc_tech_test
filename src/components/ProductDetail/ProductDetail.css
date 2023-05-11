@@ -3,7 +3,7 @@
 }
 
 .detail-container button a {
-  color: white;
+  color: var(--color-snow);
 }
 
 .product-text p span {
@@ -12,11 +12,11 @@
 
 .product-container {
   font-family: sans-serif;
-  margin: 10px auto;
+  margin: 0.7rem auto;
   width: 80%;
   display: flex;
-  color: white;
-  padding: 10px;
+  color: var(--color-snow);
+  padding: 0.7em;
 }
 
 .product-container img {
@@ -25,7 +25,7 @@
 }
 
 .product-text {
-  padding: 60px 0;
+  padding: 3.5em 0;
   line-height: 1.5;
   margin-left: 40px;
 }
@@ -39,21 +39,31 @@
   width: 70%;
   font-size: large;
   font-weight: 100;
-  margin: 30px 0;
+  margin: 1.8rem 0;
 }
 
-.btn-container {
+.btn-details-container {
   display: flex;
   justify-content: start;
+  width: fit-content;
 }
 
 .inc-btn,
 .dec-btn {
-  padding: 10px;
-  font-size: 18px;
+  padding: 0.7em;
+  font-size: 1.1rem;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: var(--color-snow);
+}
+
+.qty {
+  padding: 0.7em;
+  border-radius: 30%;
+  border: 1px solid var(--color-dark);
+  background-color: var(--color-snow);
+  color: var(--color-dark);
 }
 
 @media only screen and (max-width: 900px) {

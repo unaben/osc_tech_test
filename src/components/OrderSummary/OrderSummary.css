@@ -4,7 +4,7 @@
 
 .order-frame {
   width: 100%;
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--color-smoke);
   padding: 0.7em;
   border-radius: 0.7rem;
   min-height: 400px;

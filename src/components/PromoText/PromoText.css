@@ -1,12 +1,16 @@
 .promo-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 2.5rem;
   min-height: 2.5rem;
   width: 100%;
-  background: whitesmoke;
-  color: #1a1212;
+  background: var(--color-snow);
   padding: 0.2em 0em;
 }
 
 .promo-text-container p {
+  color: var(--color-dark);
   font-size: 1.5rem;
+  padding-left: 0.9rem;
 }

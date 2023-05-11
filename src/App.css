@@ -18,6 +18,7 @@
   --color-alge: #7999a9;
   --color-flower: #1b173a;
   --color-smoke: #e4e4e4;
+  --color-hover: #4d47b4;
 
   --borderRadius: 36px;
 
@@ -108,7 +109,7 @@ button {
 
 .add-btn:hover,
 .btn:hover {
-  background-color: #3933b3;
+  background-color: var(--color-hover);
 }
 
 .mt {

@@ -70,7 +70,7 @@ const ProductDetail: FC<IProductDetailsProps> = ({
           </div>
           <div>
             <button onClick={() => handleAddProduct()} className="add-btn">
-             {message.addToCart}
+              {message.addToCart}
             </button>
           </div>
         </div>

@@ -25,7 +25,9 @@ const CartItems: FC<ICartItemProps> = ({ cartStock, setCartStock }) => {
         <h2 className="upper">{message.yourBag}</h2>
         <div className="btn-container">
           <button className="upper btn bg">
-            <Link to="/">{message.continueShopping}</Link>
+            <Link to="/">
+              {message.continueShopping}
+            </Link>
           </button>
           <div className="flexbox">
             <p className="gap">

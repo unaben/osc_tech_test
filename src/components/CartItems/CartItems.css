@@ -25,6 +25,10 @@
   height: fit-content;
 }
 
+.btn-container button:nth-child(1):hover {
+  background: rgb(47, 45, 45);
+}
+
 .btn-container button a {
   color: white;
 }

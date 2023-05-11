@@ -41,7 +41,7 @@ const OrderSummary: FC<IOrderSummaryProps> = ({ cartStock, setCartStock }) => {
           {message.grandTotal}:{" "}
           {formatCurrency(parseFloat(grandTotal?.toFixed(2)))}
         </p>
-        <div className="btn-container">
+        <div className="btn-checkout-container">
           <button
             disabled={totalItemPrices <= 0}
             onClick={handleCompleteCheckout}

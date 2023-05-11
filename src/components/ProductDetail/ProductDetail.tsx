@@ -50,26 +50,27 @@ const ProductDetail: FC<IProductDetailsProps> = ({
               <span>{product?.variants.edges[0].node.title}</span>
             </p>
           </div>
-          <div className="btn-container">
-            <div>
-              <button
-                onClick={() => removeProduct(product, cartStock, setCartStock)}
-                disabled={!productQty}
-                className="dec-btn gap"
-              >
-                -
-              </button>
-              <span className="qty gap">{productQty || 0}</span>
-              <button
-                onClick={() => addProduct(product, cartStock, setCartStock)}
-                className="inc-btn gap"
-              >
-                +
-              </button>
-            </div>
+          <div className="btn-details-container">
+            <button
+              onClick={() => removeProduct(product, cartStock, setCartStock)}
+              disabled={!productQty}
+              className="dec-btn gap"
+            >
+              -
+            </button>
+            <span className="qty gap">{productQty || 0}</span>
+            <button
+              onClick={() => addProduct(product, cartStock, setCartStock)}
+              className="inc-btn gap"
+            >
+              +
+            </button>
           </div>
           <div>
-            <button onClick={() => handleAddProduct()} className="add-btn">
+            <button
+              onClick={() => handleAddProduct()}
+              className="add-btn upper"
+            >
               {message.addToCart}
             </button>
           </div>

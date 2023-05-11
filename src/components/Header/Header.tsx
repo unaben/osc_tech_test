@@ -23,10 +23,8 @@ const Header: FC<IHeaderProps> = ({ cartStock }) => {
         <div className="display-flex">
           <nav>
             <ul className="display-flex">
-              <li style={{ margin: "0 10px" }}>
-                <Link style={{ color: "white" }} to="/">
-                  {message.store}
-                </Link>
+              <li>
+                <Link to="/">{message.store}</Link>
               </li>
             </ul>
           </nav>

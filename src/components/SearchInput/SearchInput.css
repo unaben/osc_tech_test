@@ -1,7 +1,7 @@
 .search-container {
   display: flex;
   justify-content: end;
-  margin: 15px 30px;
+  margin: 1rem 2rem;
 }
 
 .search-input {
@@ -12,4 +12,13 @@
 
 .search-input:focus {
   outline: 2px solid #5652a1;
+}
+
+@media only screen and (max-width: 960px) {
+  .search-container {
+    margin-top: 1rem;
+  }
+  .search-input {
+    margin: 0 auto;
+  }
 }

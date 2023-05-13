@@ -28,17 +28,18 @@ const OrderSummary: FC<IOrderSummaryProps> = ({ cartStock, setCartStock }) => {
       <div className="order-frame">
         <h2 className="upper mt">{message.orderSummary}</h2>
         <p className="mt ps">
-          {message.tax}: {formatCurrency(parseFloat(tax?.toFixed(2)))}
+          {message.tax} : {formatCurrency(parseFloat(tax?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          {message.shipping}: {formatCurrency(parseFloat(shipping?.toFixed(2)))}
+          {message.shipping} :{" "}
+          {formatCurrency(parseFloat(shipping?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          {message.totalPrice}:{" "}
+          {message.totalPrice} :{" "}
           {formatCurrency(parseFloat(totalItemPrices?.toFixed(2)))}
         </p>
         <p className="mt ps">
-          {message.grandTotal}:{" "}
+          {message.grandTotal} :{" "}
           {formatCurrency(parseFloat(grandTotal?.toFixed(2)))}
         </p>
         <div className="btn-checkout-container">

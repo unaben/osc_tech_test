@@ -13,9 +13,9 @@ const StoreItems = () => {
   const products = GetProducts();
   const { searchData } = useSearch(products, searchTerm);
   return (
-    <>
+    <div className="store-container">
       <SearchProduct searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <div className="store-container">
+      <div className="store-wrapper">
         {searchData?.map((item: IStoreItems) => {
           const str = item.node.id;
           const id = str.split("/")[4];
@@ -29,7 +29,7 @@ const StoreItems = () => {
               </div>
               <div className="card-text">
                 <h1>{item?.node.title}</h1>
-                <div >
+                <div>
                   <p>
                     {formatCurrency(
                       parseFloat(
@@ -48,7 +48,7 @@ const StoreItems = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

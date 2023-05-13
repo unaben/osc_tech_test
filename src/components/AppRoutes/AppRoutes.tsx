@@ -15,7 +15,7 @@ const AppRoutes = () => {
     []
   );
   return (
-    <div className="container">
+    <div className="app-route-container">
       <Header cartStock={cartStock} />
       <Routes>
         <Route path="/" element={<ProductsList />} />

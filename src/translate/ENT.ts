@@ -8,7 +8,7 @@ export const message = {
   totalPrice: "Total Price",
   grandTotal: "Grand Total",
   product: "Product",
-  id: "ID",
+  id: "Id",
   price: "Price",
   clearCart: "clear cart",
   continueShopping: "continue shopping",

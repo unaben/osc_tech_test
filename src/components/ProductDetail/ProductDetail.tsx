@@ -29,7 +29,7 @@ const ProductDetail: FC<IProductDetailsProps> = ({
   };
 
   return (
-    <>
+    <div>
       <div className="detail-container">
         <button className="upper btn bg">
           <Link to="/">{message.continueShopping}</Link>
@@ -76,7 +76,7 @@ const ProductDetail: FC<IProductDetailsProps> = ({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

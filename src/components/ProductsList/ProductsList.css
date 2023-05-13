@@ -1,5 +1,9 @@
 .store-container {
-  max-width: fit-content;
+  width: 100%;
+}
+
+.store-wrapper {
+  max-width: 100%;
   margin: 0 auto;
   font-family: sans-serif;
   text-align: center;

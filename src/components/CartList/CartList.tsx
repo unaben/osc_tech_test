@@ -30,10 +30,14 @@ const CartList: FC<ICartListProps> = ({
       </div>
       <div className="item-container">
         <div className="item-frame">
-          <p className="mt">{message.product}: {item?.title} </p>
-          <p className="mt">{message.id}: {item?.id}</p>
-          <p className="mt">
-            {message.price}: {""}
+          <p>
+            {message.product} : {item?.title}{" "}
+          </p>
+          <p>
+            {message.id} : {item?.id}
+          </p>
+          <p>
+            {message.price} : {""}
             {formatCurrency(
               parseFloat(
                 foundProduct?.node.variants.edges[0]?.node.price.amount!
@@ -42,7 +46,7 @@ const CartList: FC<ICartListProps> = ({
           </p>
         </div>
         <div className="btn-icon-container">
-          <div>
+          <div className="btn-icon-wrapper">
             <button
               onClick={() => removeProduct(item, cartStock, setCartStock)}
               className="qty-btn gap"

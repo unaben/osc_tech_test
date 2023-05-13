@@ -20,7 +20,7 @@ const Header: FC<IHeaderProps> = ({ cartStock }) => {
             <h1>{message.title}</h1>
           </Link>
         </div>
-        <div className="display-flex">
+        <div className="display-flex wrapper">
           <nav>
             <ul className="display-flex">
               <li>

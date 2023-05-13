@@ -34,16 +34,21 @@
   align-items: center;
   margin-left: 1.5rem;
   width: 100%;
+  gap: 3rem;
 }
 
 .btn-icon-container button {
   margin: 0rem;
-  padding: 0em;
+  padding: 0em 0.5em;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--color-dark);
 }
 
 .btn-icon-wrapper {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .delete-icon {

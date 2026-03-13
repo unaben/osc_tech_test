@@ -1,0 +1,2223 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "slug": "soft-cotton-hoodie",
+      "title": "Hoodie",
+      "description": "This hoodie is the perfect choice for comfort and warmth. Meticulously crafted from 100% cotton, the hoodie features a soft, plush fleece interior and a unisex sizing design. Soft and lightweight, it's sure to be your go-to for chilly days.",
+      "gender": "men",
+      "category": "apparel",
+      "tags": ["hoodie", "cotton", "winter"],
+      "rating": 4.7,
+      "reviews": 134,
+      "collections": ["winter", "featured"],
+      "createdAt": "2025-11-01",
+      "featuredImage": {
+        "id": "img_hoodie_1",
+        "color": "green",
+        "imageType": "hoodie"
+      },
+      "images": [
+        {
+          "id": "img_hoodie_1",
+          "color": "green",
+          "imageType": "hoodie"
+        },
+        {
+          "id": "img_hoodie_2",
+          "color": "red",
+          "imageType": "hoodie"
+        },
+        {
+          "id": "img_hoodie_3",
+          "color": "clay",
+          "imageType": "hoodie"
+        },
+        {
+          "id": "img_hoodie_4",
+          "color": "ocean",
+          "imageType": "hoodie"
+        },
+        {
+          "id": "img_hoodie_5",
+          "color": "purple",
+          "imageType": "hoodie"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_hoodie_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 90, "currencyCode": "USD" },
+          "compareAtPrice": { "amount": 110, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_hoodie_green_l",
+          "size": "L",
+          "color": "green",
+          "stock": 1,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 90, "currencyCode": "USD" },
+          "compareAtPrice": { "amount": 110, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_hoodie_green_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 90, "currencyCode": "USD" },
+          "compareAtPrice": { "amount": 110, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_hoodie_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 90, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_hoodie_red_l",
+          "size": "L",
+          "color": "red",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 90, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_hoodie_red_xl",
+          "size": "XL",
+          "color": "red",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 90, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_hoodie_ocean_l",
+          "size": "L",
+          "color": "ocean",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 90, "currencyCode": "USD" },
+          "compareAtPrice": { "amount": 110, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_hoodie_clay_l",
+          "size": "L",
+          "color": "clay",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 90, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_002",
+      "slug": "sweat-pants",
+      "title": "Sweatpants",
+      "description": "Soft and comfortable sweatpants in stylish shades. They are perfect for lounging with their cozy stretch fabric that offers just the right amount of warmth. Enjoy the ultimate relaxation experience!",
+      "gender": "men",
+      "category": "apparel",
+      "tags": ["sweatpants", "cotton"],
+      "rating": 4.5,
+      "reviews": 212,
+      "collections": ["summer"],
+      "createdAt": "2025-11-03",
+      "featuredImage": {
+        "id": "img_pant_1",
+        "color": "green",
+        "imageType": "sweatpants"
+      },
+      "images": [
+        {
+          "id": "img_pant_1",
+          "color": "green",
+          "imageType": "sweatpants"
+        },
+        {
+          "id": "img_pant_2",
+          "color": "red",
+          "imageType": "sweatpants"
+        },
+        {
+          "id": "img_pant_3",
+          "color": "ocean",
+          "imageType": "sweatpants"
+        },
+        {
+          "id": "img_pant_4",
+          "color": "clay",
+          "imageType": "sweatpants"
+        },
+        {
+          "id": "img_pant_5",
+          "color": "purple",
+          "imageType": "sweatpants"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_sweatpants_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_green_l",
+          "size": "L",
+          "color": "green",
+          "stock": 28,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_sweatpants_clay_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 8,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_clay_l",
+          "size": "L",
+          "color": "clay",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_clay_xl",
+          "size": "XL",
+          "color": "clay",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_sweatpants_purple_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_purple_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_purple_l",
+          "size": "L",
+          "color": "purple",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_sweatpants_ocean_s",
+          "size": "S",
+          "color": "ocean",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sweatpants_ocean_xl",
+          "size": "XL",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_sweatpants_red_xl",
+          "size": "XL",
+          "color": "red",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_003",
+      "slug": "half-zip",
+      "title": "Half Zip",
+      "description": "This half zip athletic sweatshirt is designed for optimum comfort and convenience. The half zip provides easy access to slip on and off, and the lightweight fabric is breathable and flexible, ideal for active pursuits. Perfect for athletes of all levels.",
+      "gender": "men",
+      "category": "sportswear",
+      "tags": ["halfzip", "running"],
+      "rating": 4.6,
+      "reviews": 98,
+      "collections": ["summer"],
+      "createdAt": "2025-11-05",
+      "featuredImage": {
+        "id": "img_half_zip_1",
+        "color": "green",
+        "imageType": "halfzip"
+      },
+      "images": [
+        {
+          "id": "img_half_zip_1",
+          "color": "green",
+          "imageType": "halfzip"
+        },
+        {
+          "id": "img_half_zip_2",
+          "color": "clay",
+          "imageType": "halfzip"
+        },
+        {
+          "id": "img_half_zip_3",
+          "color": "ocean",
+          "imageType": "halfzip"
+        },
+        {
+          "id": "img_half_zip_4",
+          "color": "red",
+          "imageType": "halfzip"
+        },
+        {
+          "id": "img_half_zip_5",
+          "color": "purple",
+          "imageType": "halfzip"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_halfzip_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_green_l",
+          "size": "L",
+          "color": "green",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_green_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 7,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_halfzip_clay_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_clay_m",
+          "size": "M",
+          "color": "clay",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_clay_xl",
+          "size": "XL",
+          "color": "clay",
+          "stock": 30,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_halfzip_ocean_s",
+          "size": "S",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_ocean_l",
+          "size": "L",
+          "color": "ocean",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_halfzip_purple_l",
+          "size": "L",
+          "color": "purple",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_halfzip_red_s",
+          "size": "S",
+          "color": "red",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 1,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_halfzip_red_xl",
+          "size": "XL",
+          "color": "red",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_004",
+      "slug": "light-puffer",
+      "title": "Light Puffer",
+      "description": "This light puffer vest is made from durable nylon and will keep you dry and comfortable in all weather. Its light coating provides reliable protection from wind and rain, and its versatile fit offers maximum mobility. Perfect for moderate temperatures and varied conditions.",
+      "gender": "unisex",
+      "category": "accessories",
+      "tags": ["puffervest", "jacket"],
+      "rating": 4.8,
+      "reviews": 167,
+      "collections": ["winter", "spring"],
+      "createdAt": "2025-11-07",
+      "featuredImage": {
+        "id": "img_light_puffer_1",
+        "color": "green",
+        "imageType": "puffervest"
+      },
+      "images": [
+        {
+          "id": "img_light_puffer_1",
+          "color": "green",
+          "imageType": "puffervest"
+        },
+        {
+          "id": "img_light_puffer_2",
+          "color": "clay",
+          "imageType": "puffervest"
+        },
+        {
+          "id": "img_light_puffer_3",
+          "color": "red",
+          "imageType": "puffervest"
+        },
+        {
+          "id": "img_light_puffer_4",
+          "color": "purple",
+          "imageType": "puffervest"
+        },
+        {
+          "id": "img_light_puffer_5",
+          "color": "ocean",
+          "imageType": "puffervest"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_lightpuffer_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_lightpuffer_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_lightpuffer_green_l",
+          "size": "L",
+          "color": "green",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_lightpuffer_green_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 9,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_lightpuffer_ocean_m",
+          "size": "M",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_lightpuffer_red_s",
+          "size": "S",
+          "color": "red",
+          "stock": 49,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_lightpuffer_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 17,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_lightpuffer_red_l",
+          "size": "L",
+          "color": "red",
+          "stock": 34,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_lightpuffer_clay_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+
+        {
+          "id": "sku_lightpuffer_purple_xl",
+          "size": "XL",
+          "color": "purple",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_005",
+      "slug": "puffer",
+      "title": "Puffer",
+      "description": "This light puffer vest is made from durable nylon and will keep you dry and comfortable in all weather. Its light coating provides reliable protection from wind and rain, and its versatile fit offers maximum mobility. Perfect for moderate temperatures and varied conditions.",
+      "gender": "men",
+      "category": "accessories",
+      "tags": ["pufferjacket", "jacket"],
+      "rating": 4.4,
+      "reviews": 54,
+      "collections": ["winter", "spring"],
+      "createdAt": "2025-11-08",
+      "featuredImage": {
+        "id": "img_puffer_1",
+        "color": "green",
+        "imageType": "pufferjacket"
+      },
+      "images": [
+        {
+          "id": "img_puffer_1",
+          "color": "green",
+          "imageType": "pufferjacket"
+        },
+        {
+          "id": "img_puffer_2",
+          "color": "red",
+          "imageType": "pufferjacket"
+        },
+        {
+          "id": "img_puffer_3",
+          "color": "ocean",
+          "imageType": "pufferjacket"
+        },
+        {
+          "id": "img_puffer_4",
+          "color": "purple",
+          "imageType": "pufferjacket"
+        },
+        {
+          "id": "img_puffer_5",
+          "color": "clay",
+          "imageType": "pufferjacket"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_puffer_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 25,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_m",
+          "size": "M",
+          "color": "clay",
+          "stock": 55,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_m",
+          "size": "M",
+          "color": "ocean",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_s",
+          "size": "S",
+          "color": "red",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 45,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_xl",
+          "size": "XL",
+          "color": "clay",
+          "stock": 25,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_xl",
+          "size": "XL",
+          "color": "purple",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 22,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_puffer_green_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 95, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_006",
+      "slug": "frontpack",
+      "title": "Frontpack",
+      "description": "This frontpack is the perfect combination of form and function, with a modern, sporty design and patented technology that enables you to easily carry numerous items on the go. It's light, comfortable and has adjustable straps to fit all body types. Plus, its water-resistant outer shell ensures your items stay dry and secure.",
+      "gender": "men",
+      "category": "accessories",
+      "tags": ["frontpack", "travel", "utility"],
+      "rating": 4.6,
+      "reviews": 88,
+      "collections": ["travel", "featured"],
+      "createdAt": "2025-11-10",
+      "featuredImage": {
+        "id": "img_frontpack_1",
+        "color": "green",
+        "imageType": "frontpack"
+      },
+      "images": [
+        {
+          "id": "img_frontpack_1",
+          "color": "green",
+          "imageType": "frontpack"
+        },
+        {
+          "id": "img_frontpack_2",
+          "color": "red",
+          "imageType": "frontpack"
+        },
+        {
+          "id": "img_frontpack_3",
+          "color": "ocean",
+          "imageType": "frontpack"
+        },
+        {
+          "id": "img_frontpack_4",
+          "color": "clay",
+          "imageType": "frontpack"
+        },
+        {
+          "id": "img_frontpack_5",
+          "color": "purple",
+          "imageType": "frontpack"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_frontpack_green",
+          "color": "green",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 75, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_frontpack_red",
+          "color": "red",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 75, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_frontpack_clay",
+          "color": "clay",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 75, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_frontpack_purple",
+          "color": "purple",
+          "stock": 26,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 75, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_frontpack_ocean",
+          "color": "ocean",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 75, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_007",
+      "slug": "black-sunnies",
+      "title": "Black Sunnies",
+      "description": "These modern black sunglasses provide 100% UV400 protection from harmful sunrays and feature mirrored lenses for a timeless and stylish look. With lightweight construction and comfortable fit, you can look cool and stay safe in any situation.",
+      "gender": "unisex",
+      "category": "accessories",
+      "tags": ["sunglasses", "summer"],
+      "rating": 4.5,
+      "reviews": 120,
+      "collections": ["summer"],
+      "createdAt": "2025-11-11",
+      "featuredImage": {
+        "id": "img_bs_1",
+        "color": "black",
+        "imageType": "sunglasses"
+      },
+      "images": [
+        {
+          "id": "img_bs_1",
+          "color": "black",
+          "imageType": "sunglasses"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_bs_black",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 50.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_008",
+      "slug": "clear-sunnies",
+      "title": "Clear Sunnies",
+      "description": "These modern clear sunglasses provide 100% UV400 protection from harmful sunrays and feature mirrored lenses for a timeless and stylish look. With lightweight construction and comfortable fit, you can look cool and stay safe in any situation.",
+      "gender": "unisex",
+      "category": "accessories",
+      "tags": ["sunglasses", "fashion"],
+      "rating": 4.4,
+      "reviews": 76,
+      "collections": ["summer"],
+      "createdAt": "2025-11-12",
+      "featuredImage": {
+        "id": "img_cs_1",
+        "color": "seethrough",
+        "imageType": "sunglasses"
+      },
+      "images": [
+        {
+          "id": "img_cs_1",
+          "color": "seethrough",
+          "imageType": "sunglasses"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_cs_clear",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 50.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_009",
+      "slug": "slides",
+      "title": "Slides",
+      "description": "Simple, minimal and comfortable, these slides feature a classic design in the perfect shade of iron. Whether you're just lounging around the house or running errands, these slides will offer all-day comfort.",
+      "gender": "men",
+      "category": "footwear",
+      "tags": ["slides", "summer", "casual"],
+      "rating": 4.3,
+      "reviews": 91,
+      "collections": ["summer"],
+      "createdAt": "2025-11-13",
+      "featuredImage": {
+        "id": "img_slides_1",
+        "color": "black",
+        "imageType": "slides"
+      },
+      "images": [
+        {
+          "id": "img_slides_1",
+          "color": "black",
+          "imageType": "slides"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_slides_black_8",
+          "size": "8",
+          "color": "black",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 39.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_slides_black_9",
+          "size": "9",
+          "color": "black",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 39.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_slides_black_10",
+          "size": "10",
+          "color": "black",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 39.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_slides_black_11",
+          "size": "11",
+          "color": "black",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 39.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_slides_black_12",
+          "size": "12",
+          "color": "black",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 39.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_010",
+      "slug": "womens-crewneck",
+      "title": "Women's Crewneck",
+      "description": "This high-quality crewneck is perfect for your everyday look. Made with 100% cotton, it's soft, comfortable, and undeniably stylish. Full sleeved for a classic look and effortlessly versatile, this cotton crewneck is a must-have in any wardrobe.",
+      "gender": "women",
+      "category": "apparel",
+      "tags": ["womenscrew", "women"],
+      "rating": 4.7,
+      "reviews": 140,
+      "collections": ["winter"],
+      "createdAt": "2025-11-14",
+      "featuredImage": {
+        "id": "img_wc_1",
+        "color": "green",
+        "imageType": "womenscrew"
+      },
+      "images": [
+        {
+          "id": "img_wc_1",
+          "color": "green",
+          "imageType": "womenscrew"
+        },
+        {
+          "id": "img_wc_2",
+          "color": "ocean",
+          "imageType": "womenscrew"
+        },
+        {
+          "id": "img_wc_3",
+          "color": "clay",
+          "imageType": "womenscrew"
+        },
+        {
+          "id": "img_wc_4",
+          "color": "purple",
+          "imageType": "womenscrew"
+        },
+        {
+          "id": "img_wc_5",
+          "color": "red",
+          "imageType": "womenscrew"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_wc_s",
+          "size": "S",
+          "color": "green",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_m",
+          "size": "M",
+          "color": "green",
+          "stock": 27,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_s",
+          "size": "S",
+          "color": "red",
+          "stock": 20,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_m",
+          "size": "M",
+          "color": "red",
+          "stock": 17,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_011",
+      "slug": "womens-tshirt",
+      "title": "Women's T-Shirt",
+      "description": "Crafted from organic cotton, this classic T-shirt features a relaxed fit, crew neckline and timeless look. Enjoy the breathable comfort of 100% organic cotton.",
+      "gender": "women",
+      "category": "apparel",
+      "tags": ["womenstshirt", "women"],
+      "rating": 4.6,
+      "reviews": 111,
+      "collections": ["summer"],
+      "createdAt": "2025-11-15",
+      "featuredImage": {
+        "id": "img_wt_1",
+        "color": "green",
+        "imageType": "womenstshirt"
+      },
+      "images": [
+        { "id": "img_wt_1", "color": "green", "imageType": "womenstshirt" },
+        { "id": "img_wt_2", "color": "clay", "imageType": "womenstshirt" },
+        { "id": "img_wt_3", "color": "ocean", "imageType": "womenstshirt" },
+        { "id": "img_wt_4", "color": "red", "imageType": "womenstshirt" },
+        { "id": "img_wt_5", "color": "purple", "imageType": "womenstshirt" }
+      ],
+      "variants": [
+        {
+          "id": "sku_wt_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_red_s",
+          "size": "S",
+          "color": "red",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_purple_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 25,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 25,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_clay_m",
+          "size": "M",
+          "color": "clay",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wt_purple_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 35,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_012",
+      "slug": "workout-shirt",
+      "title": "Workout Shirt",
+      "description": "This high-performance workout shirt made from high-quality Nylon is designed with comfort and durability in mind.",
+      "gender": "women",
+      "category": "sportswear",
+      "tags": ["workoutshirt", "gym", "training"],
+      "rating": 4.4,
+      "reviews": 63,
+      "collections": ["fitness"],
+      "createdAt": "2025-11-16",
+      "featuredImage": {
+        "id": "img_ws_1",
+        "color": "green",
+        "imageType": "workoutshirt"
+      },
+      "images": [
+        { "id": "img_ws_1", "color": "green", "imageType": "workoutshirt" },
+        { "id": "img_ws_2", "color": "ocean", "imageType": "workoutshirt" },
+        { "id": "img_ws_3", "color": "clay", "imageType": "workoutshirt" },
+        { "id": "img_ws_4", "color": "red", "imageType": "workoutshirt" },
+        { "id": "img_ws_5", "color": "purple", "imageType": "workoutshirt" }
+      ],
+      "variants": [
+        {
+          "id": "sku_ws_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_red_s",
+          "size": "S",
+          "color": "red",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_clay_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_purple_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_purple_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ws_clay_m",
+          "size": "M",
+          "color": "clay",
+          "stock": 23,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 12.69, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_013",
+      "slug": "leggings",
+      "title": "Leggings",
+      "description": "These sporty and lightweight leggings are designed for comfort and ease of movement. Its moisture-wicking fabric and strong seams keep you feeling cool and secure. Available in an array of colors, these leggings are an ideal choice to look stylish while exercising.",
+      "gender": "women",
+      "category": "sportswear",
+      "tags": ["leggings", "fitness"],
+      "rating": 4.7,
+      "reviews": 170,
+      "collections": ["fitness"],
+      "createdAt": "2025-11-17",
+      "featuredImage": {
+        "id": "img_leg_1",
+        "color": "green",
+        "imageType": "leggings"
+      },
+      "images": [
+        {
+          "id": "img_leg_1",
+          "color": "green",
+          "imageType": "leggings"
+        },
+        {
+          "id": "img_leg_2",
+          "color": "red",
+          "imageType": "leggings"
+        },
+        {
+          "id": "img_leg_3",
+          "color": "clay",
+          "imageType": "leggings"
+        },
+        {
+          "id": "img_leg_4",
+          "color": "purple",
+          "imageType": "leggings"
+        },
+        {
+          "id": "img_leg_5",
+          "color": "ocean",
+          "imageType": "leggings"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_leg_s",
+          "size": "S",
+          "color": "green",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_s",
+          "size": "S",
+          "color": "red",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_s",
+          "size": "S",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 1,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_m",
+          "size": "M",
+          "color": "green",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_m",
+          "size": "M",
+          "color": "red",
+          "stock": 17,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_leg_m",
+          "size": "M",
+          "color": "ocean",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 69.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_014",
+      "slug": "mens-tshirt",
+      "title": "Men's T-Shirt",
+      "description": "Crafted from organic cotton, this classic T-shirt features a relaxed fit, crew neckline and timeless look. Enjoy the breathable comfort of 100% organic cotton.",
+      "gender": "men",
+      "category": "apparel",
+      "tags": ["tshirt", "men"],
+      "rating": 4.5,
+      "reviews": 134,
+      "collections": ["summer"],
+      "createdAt": "2025-11-18",
+      "featuredImage": {
+        "id": "img_mt_1",
+        "color": "green",
+        "imageType": "tshirt"
+      },
+      "images": [
+        {
+          "id": "img_mt_1",
+          "color": "green",
+          "imageType": "tshirt"
+        },
+        {
+          "id": "img_mt_2",
+          "color": "ocean",
+          "imageType": "tshirt"
+        },
+        {
+          "id": "img_mt_3",
+          "color": "red",
+          "imageType": "tshirt"
+        },
+        {
+          "id": "img_mt_4",
+          "color": "clay",
+          "imageType": "tshirt"
+        },
+        {
+          "id": "img_mt_5",
+          "color": "purple",
+          "imageType": "tshirt"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_mt_m",
+          "size": "M",
+          "color": "green",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_m",
+          "size": "M",
+          "color": "ocean",
+          "stock": 26,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_m",
+          "size": "M",
+          "color": "red",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_m",
+          "size": "M",
+          "color": "green",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_l",
+          "size": "L",
+          "color": "green",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_l",
+          "size": "L",
+          "color": "clay",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_l",
+          "size": "L",
+          "color": "red",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_l",
+          "size": "L",
+          "color": "ocean",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_xl",
+          "size": "XL",
+          "color": "purple",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mt_xl",
+          "size": "XL",
+          "color": "red",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_015",
+      "slug": "high-top-sneakers",
+      "title": "High Top Sneakers",
+      "description": "These stylish and durable high top sneakers are perfect for any casual look.",
+      "gender": "unisex",
+      "category": "footwear",
+      "tags": ["sneakers", "streetwear"],
+      "rating": 4.8,
+      "reviews": 201,
+      "collections": ["featured"],
+      "createdAt": "2025-11-19",
+      "featuredImage": {
+        "id": "img_ht_1",
+        "color": "white",
+        "imageType": "sneakers"
+      },
+      "images": [
+        { "id": "img_ht_1", "color": "white", "imageType": "sneakers" }
+      ],
+      "variants": [
+        {
+          "id": "sku_ht_white_6",
+          "size": "6",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 180.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ht_white_7",
+          "size": "7",
+          "stock": 16,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 180.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ht_white_8",
+          "size": "8",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 180.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ht_white_9",
+          "size": "9",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 180.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ht_white_10",
+          "size": "10",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 180.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_016",
+      "slug": "white-leather-sneakers",
+      "title": "White Leather Sneakers",
+      "description": "This high-quality white leather sneakers is perfect for your everyday look. Made with 100% leather, it's soft, comfortable, and undeniably stylish.",
+      "gender": "unisex",
+      "category": "footwear",
+      "tags": ["leather", "sneakers"],
+      "rating": 4.7,
+      "reviews": 158,
+      "collections": ["featured"],
+      "createdAt": "2025-11-20",
+      "featuredImage": {
+        "id": "img_ls_1",
+        "color": "white",
+        "imageType": "sneakers"
+      },
+      "images": [
+        {
+          "id": "img_ls_1",
+          "color": "white",
+          "imageType": "sneakers"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_ls_8",
+          "size": "8",
+          "stock": 7,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ls_9",
+          "size": "9",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ls_10",
+          "size": "10",
+          "stock": 23,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ls_11",
+          "size": "11",
+          "stock": 17,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_ls_12",
+          "size": "12",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_017",
+      "slug": "gray-leather-sneakers",
+      "title": "Gray Leather Sneakers",
+      "description": "These gray leather sneakers combine comfort and style for the perfect professional look. The breathable leather material ensures breathability and provides a comfortable fit, perfect for the office and other formal occasions. The handmade design is stylish and guaranteed to last.",
+      "gender": "unisex",
+      "category": "footwear",
+      "tags": ["leather", "sneakers"],
+      "rating": 4.6,
+      "reviews": 102,
+      "collections": ["featured"],
+      "createdAt": "2025-11-21",
+      "featuredImage": {
+        "id": "img_gls_1",
+        "color": "grey",
+        "imageType": "sneakers"
+      },
+      "images": [
+        {
+          "id": "img_gls_1",
+          "color": "grey",
+          "imageType": "sneakers"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_gls_8",
+          "size": "8",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 199.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gls_9",
+          "size": "9",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 199.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gls_10",
+          "size": "10",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 199.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gls_11",
+          "size": "11",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 199.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gls_12",
+          "size": "12",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 199.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_018",
+      "slug": "gray-runners",
+      "title": "Gray Runners",
+      "description": "These gray runners are the perfect choice for running enthusiasts. These shoes provide superior breathability and comfort, so you can run longer with less fatigue. The lightweight design and airy mesh material make these shoes durable and lightweight, giving you the support you need for peak performance.",
+      "gender": "men",
+      "category": "footwear",
+      "tags": ["runners", "running", "shoes"],
+      "rating": 4.5,
+      "reviews": 143,
+      "collections": ["fitness"],
+      "createdAt": "2025-11-22",
+      "featuredImage": {
+        "id": "img_gr_1",
+        "color": "grey",
+        "imageType": "runners"
+      },
+      "images": [
+        {
+          "id": "img_gr_1",
+          "color": "grey",
+          "imageType": "runners"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_gr_10",
+          "size": "10",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 89.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gr_6",
+          "size": "6",
+          "stock": 22,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 89.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_gr_9",
+          "size": "9",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 89.99, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_019",
+      "slug": "canvas-sneakers",
+      "title": "Canvas Sneakers",
+      "description": "These high-quality canvas sneakers offer a comfortable fit and superior breathability, thanks to their cushioning midsoles and durable construction. An array of stylish colors adds to the appeal, making them perfect for casual wear. Slip them on and enjoy reliable performance and style that lasts.",
+      "gender": "unisex",
+      "category": "footwear",
+      "tags": ["canvas", "sneakers"],
+      "rating": 4.4,
+      "reviews": 99,
+      "collections": ["summer"],
+      "createdAt": "2025-11-23",
+      "featuredImage": {
+        "id": "img_csneak_1",
+        "color": "green",
+        "imageType": "sneakers"
+      },
+      "images": [
+        {
+          "id": "img_csneak_1",
+          "color": "green",
+          "imageType": "sneakers"
+        },
+        {
+          "id": "img_csneak_2",
+          "color": "clay",
+          "imageType": "sneakers"
+        },
+        {
+          "id": "img_csneak_3",
+          "color": "purple",
+          "imageType": "sneakers"
+        },
+        {
+          "id": "img_csneak_4",
+          "color": "red",
+          "imageType": "sneakers"
+        },
+        {
+          "id": "img_csneak_5",
+          "color": "ocean",
+          "imageType": "sneakers"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_cs_9",
+          "size": "9",
+          "color": "green",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_9",
+          "size": "9",
+          "color": "ocean",
+          "stock": 24,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_8",
+          "size": "8",
+          "color": "red",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_8",
+          "size": "8",
+          "color": "clay",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_11",
+          "size": "11",
+          "color": "green",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_11",
+          "size": "11",
+          "color": "red",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_11",
+          "size": "11",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_9",
+          "size": "9",
+          "color": "red",
+          "stock": 5,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_12",
+          "size": "12",
+          "color": "green",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_12",
+          "size": "12",
+          "color": "purple",
+          "stock": 4,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_12",
+          "size": "12",
+          "color": "clay",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_12",
+          "size": "12",
+          "color": "red",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_7",
+          "size": "7",
+          "color": "green",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_7",
+          "size": "7",
+          "color": "red",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_7",
+          "size": "7",
+          "color": "purple",
+          "stock": 8,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_cs_7",
+          "size": "7",
+          "color": "ocean",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 40, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_020",
+      "slug": "shorts",
+      "title": "Shorts",
+      "description": "These shorts are designed to help you reach peak performance. Constructed with high performance nylon fabric in a variety of shades, they are built to last and provide maximum comfort.",
+      "gender": "men",
+      "category": "apparel",
+      "tags": ["shorts", "summer"],
+      "rating": 4.3,
+      "reviews": 74,
+      "collections": ["summer"],
+      "createdAt": "2025-11-24",
+      "featuredImage": {
+        "id": "img_sh_1",
+        "color": "green",
+        "imageType": "shorts"
+      },
+      "images": [
+        { "id": "img_sh_1", "color": "green", "imageType": "shorts" },
+        { "id": "img_sh_2", "color": "clay", "imageType": "shorts" },
+        { "id": "img_sh_3", "color": "red", "imageType": "shorts" },
+        { "id": "img_sh_4", "color": "purple", "imageType": "shorts" },
+        { "id": "img_sh_5", "color": "ocean", "imageType": "shorts" }
+      ],
+      "variants": [
+        {
+          "id": "sku_sh_green_s",
+          "size": "S",
+          "color": "green",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_red_s",
+          "size": "S",
+          "color": "red",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_ocean_s",
+          "size": "S",
+          "color": "ocean",
+          "stock": 14,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_clay_s",
+          "size": "S",
+          "color": "clay",
+          "stock": 11,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_green_m",
+          "size": "M",
+          "color": "green",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_clay_m",
+          "size": "M",
+          "color": "clay",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_red_m",
+          "size": "M",
+          "color": "red",
+          "stock": 22,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_purple_m",
+          "size": "M",
+          "color": "purple",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_purple_l",
+          "size": "L",
+          "color": "purple",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_green_l",
+          "size": "L",
+          "color": "green",
+          "stock": 22,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_red_l",
+          "size": "L",
+          "color": "red",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_ocean_l",
+          "size": "L",
+          "color": "ocean",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_purple_xl",
+          "size": "XL",
+          "color": "purple",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_sh_green_xl",
+          "size": "XL",
+          "color": "green",
+          "stock": 2,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 45, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_021",
+      "slug": "mens-crewneck",
+      "title": "Men's Crewneck",
+      "description": "This high-quality crewneck is perfect for your everyday look. Made with 100% cotton, it's soft, comfortable, and undeniably stylish. Full sleeved for a classic look and effortlessly versatile, this cotton crewneck is a must-have in any wardrobe.",
+      "gender": "men",
+      "category": "apparel",
+      "tags": ["menscrew", "men"],
+      "rating": 4.6,
+      "reviews": 101,
+      "collections": ["winter"],
+      "createdAt": "2025-11-25",
+      "featuredImage": {
+        "id": "img_mc_1",
+        "color": "green",
+        "imageType": "menscrew"
+      },
+      "images": [
+        {
+          "id": "img_mc_1",
+          "color": "green",
+          "imageType": "menscrew"
+        },
+        {
+          "id": "img_mc_2",
+          "color": "ocean",
+          "imageType": "menscrew"
+        },
+        {
+          "id": "img_mc_3",
+          "color": "red",
+          "imageType": "menscrew"
+        },
+        {
+          "id": "img_mc_4",
+          "color": "purple",
+          "imageType": "menscrew"
+        },
+        {
+          "id": "img_mc_5",
+          "color": "clay",
+          "imageType": "menscrew"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_mc_m",
+          "color": "green",
+          "size": "M",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_m",
+          "color": "ocean",
+          "size": "M",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_m",
+          "color": "red",
+          "size": "M",
+          "stock": 17,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_m",
+          "color": "clay",
+          "size": "M",
+          "stock": 15,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_s",
+          "color": "green",
+          "size": "S",
+          "stock": 3,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_s",
+          "color": "purple",
+          "size": "S",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_s",
+          "color": "red",
+          "size": "S",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_s",
+          "color": "clay",
+          "size": "S",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_l",
+          "color": "green",
+          "size": "L",
+          "stock": 9,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_l",
+          "color": "purple",
+          "size": "L",
+          "stock": 19,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_l",
+          "color": "red",
+          "size": "L",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_l",
+          "color": "ocean",
+          "size": "L",
+          "stock": 12,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_xl",
+          "color": "green",
+          "size": "XL",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_xl",
+          "color": "red",
+          "size": "XL",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_xl",
+          "color": "ocean",
+          "size": "XL",
+          "stock": 23,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_mc_xl",
+          "color": "clay",
+          "size": "XL",
+          "stock": 6,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 120, "currencyCode": "USD" }
+        }
+      ]
+    },
+    {
+      "id": "prod_022",
+      "slug": "beanie",
+      "title": "Beanie",
+      "description": "This beanie is perfect for all seasons! Crafted in luxurious cashmere - it's classic, warm and comfortable. Just the thing to keep you stylish and cozy.",
+      "category": "accessories",
+      "tags": ["hat", "winter"],
+      "rating": 4.4,
+      "reviews": 93,
+      "collections": ["winter"],
+      "createdAt": "2025-11-27",
+      "featuredImage": {
+        "id": "img_beanie_1",
+        "color": "green",
+        "imageType": "hat"
+      },
+      "images": [
+        {
+          "id": "img_beanie_1",
+          "color": "green",
+          "imageType": "hat"
+        },
+        {
+          "id": "img_beanie_2",
+          "color": "red",
+          "imageType": "hat"
+        },
+        {
+          "id": "img_beanie_3",
+          "color": "clay",
+          "imageType": "hat"
+        },
+        {
+          "id": "img_beanie_4",
+          "color": "ocean",
+          "imageType": "hat"
+        },
+        {
+          "id": "img_beanie_5",
+          "color": "purple",
+          "imageType": "hat"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sku_beanie_green",
+          "stock": 13,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 100, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_beanie_red",
+          "stock": 18,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 100, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_beanie_purple",
+          "stock": 1,
+          "inventoryStatus": "low_stock",
+          "price": { "amount": 100, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_beanie_ocean",
+          "stock": 28,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 100, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_beanie_clay",
+          "stock": 10,
+          "inventoryStatus": "in_stock",
+          "price": { "amount": 100, "currencyCode": "USD" }
+        }
+      ]
+    }
+  ]
+}

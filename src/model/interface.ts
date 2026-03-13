@@ -1,53 +1,56 @@
-export interface IStoreItems {
-  node: {
-    id: string;
-    title: string;
-    description: string;
-    featuredImage: IFeaturedImage;
-    variants: IVariants;
-  };
-}
+export type ProductGender = "men" | "women" | "unisex" | "kids";
 
-interface IFeaturedImage {
+export type ProductInventoryStatus = "in_stock" | "low_stock" | "out_of_stock";
+
+type Color = 'green' | 'olive' | 'ocean' | 'red' | 'clay' | 'purple'
+
+export interface ProductImage {
   id: string;
-  url: string;
+  color: Color;
+  imageType: string;
 }
 
-interface IVariants {
-  edges: [
-    {
-      node: {
-        price: {
-          amount: string;
-          currencyCode: string;
-        };
-      };
-    }
-  ];
+export interface ProductPrice {
+  amount: number;
+  currencyCode: string;
 }
 
-export interface IVariantProduct {
+export interface ProductVariant {
   id: string;
+  size?: string;
+  color?: Color;
+  stock: number;
+  inventoryStatus: ProductInventoryStatus;
+  price: ProductPrice;
+  compareAtPrice?: ProductPrice;
+}
+
+// Computed stock summary, added dynamically to each Product
+export interface ProductStock {
+  availableStock: number; 
+  inStock: boolean;      
+  variantCount: number;
+  totalStockValue: number;  
+}
+
+export interface Product extends ProductStock {
+  id: string;
+  slug: string;
   title: string;
   description: string;
-  quantity?: number;
-  featuredImage: IFeaturedImage;
-  variants: {
-    edges: [
-      {
-        cursor: string;
-        node: {
-          id: string;
-          title: string;
-          image: {
-            url: string;
-          };
-          price: {
-            amount: string;
-            currencyCode: string;
-          };
-        };
-      }
-    ];
-  };
+  gender: ProductGender;
+  category: string;
+  tags: string[];
+  rating: number;
+  reviews: number;
+  collections: string[];
+  createdAt: string;
+  featuredImage: ProductImage;
+  images: ProductImage[];
+  variants: ProductVariant[];
+}
+
+export interface ProductsResponse {
+  products: Product[];
+  total?: number;
 }

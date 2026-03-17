@@ -1,0 +1,707 @@
+/* PAGE */
+
+.coPage {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LAYOUT */
+
+.coBody {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  gap: 5rem;
+  align-items: start;
+}
+
+.coLeft {
+}
+
+.coRight {
+  position: sticky;
+  top: 20px;
+  border-left: 1px solid var(--border);
+  padding-left: 3rem;
+}
+
+/* BREADCRUMB */
+
+.coBreadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.coBreadcrumbBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.coBreadcrumbBtn:hover {
+  color: var(--text);
+}
+
+.coBreadcrumbSep {
+  color: #ccc;
+}
+
+.coBreadcrumbActive {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* SECTION */
+
+.coSection {
+  margin-bottom: 1.75rem;
+}
+
+.coSectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.875rem;
+  color: var(--text);
+}
+
+.coIconLockContent {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35re;
+}
+
+/* INPUTS */
+
+.coFieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.one {
+  grid-template-columns: 1fr;
+}
+
+.marginBt {
+  margin-bottom: 0.6rem;
+}
+
+.coField {
+  position: relative;
+}
+
+.coInput {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: border-color var(--transition);
+  outline: none;
+}
+
+.relativePosition {
+  position: relative;
+}
+
+.bRadius {
+  border-radius: 0;
+}
+
+.coInput:focus {
+  border-color: #aaa;
+}
+
+.coInput::placeholder {
+  color: var(--text-muted);
+}
+
+.coInputIcon {
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* SELECT */
+
+.coSelect {
+  width: 100%;
+  padding: 1.6rem 1rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.coSelect:focus {
+  border-color: #aaa;
+}
+
+.coSelectWrap {
+  position: relative;
+}
+
+.coSelectLabel {
+  position: absolute;
+  top: 0.45rem;
+  left: 1rem;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+
+.coSelectCaret {
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+/* CARD GROUP */
+
+.coCardGroup {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.coCardGroup .coInput {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.coCardGroup .coInput:last-child {
+  border-bottom: none;
+}
+
+.coCardGroupRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coCardGroupRow .coInput {
+  border-bottom: none;
+  border-right: 1px solid var(--border);
+}
+
+.coCardGroupRow .coInput:last-child {
+  border-right: none;
+}
+
+/* SHIPPING */
+
+.coShippingPlaceholder {
+  padding: 1rem;
+  background: #f5f4f2;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* PAYMENT HEADER */
+
+.coPaymentHeader {
+  border: 1.5px solid #2563eb;
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+}
+
+.coPaymentLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.coCardIcons {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.coCardIcon {
+  height: 22px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0 5px;
+}
+
+.visa {
+  background: #1a1f71;
+  color: #fff;
+}
+
+.mc {
+  background: #fff;
+  border-color: #ddd;
+  overflow: hidden;
+}
+
+.amex {
+  background: #2e77bc;
+  color: #fff;
+}
+
+.more {
+  background: var(--border);
+  color: var(--text-muted);
+  font-size: 0.65rem;
+}
+
+/* CHECKBOX */
+
+.coCheckboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.5rem;
+}
+
+.coCheckBox {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checked {
+  background: #2563eb;
+  border: 1.5px solid #2563eb;
+}
+
+.unchecked {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+}
+
+.svg {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* SAVE INFO */
+
+.coSaveBox {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--surface);
+}
+
+.coSaveBox span {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.coSaveLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.coSaveSub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.coLegal {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.coLegal a {
+  color: var(--text);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* EXPRESS */
+
+.coExpress {
+  margin-bottom: 1rem;
+}
+
+.coExpressLabel {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.coExpressBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.coExpressShop {
+  padding: 0.85rem;
+  background: #5a31f4;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+
+.coExpressShop:hover {
+  opacity: 0.9;
+}
+
+.coExpressGpay {
+  padding: 0.85rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: opacity var(--transition);
+}
+
+.coExpressGpay:hover {
+  opacity: 0.85;
+}
+
+.coExpressGpaySpan {
+  color: #4285f4;
+  font-weight: 800;
+  font-size: "1rem";
+}
+
+.coOr {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.25rem 0 1.25rem;
+}
+
+.coOr hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.coOr span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* CONTACT */
+
+.coContactRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  margin-bottom: 0.5rem;
+}
+
+.coContactAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--text);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.coContactEmail {
+  flex: 1;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+/* PAY BUTTON */
+
+.coPayBtn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+  margin-bottom: 0.75rem;
+}
+
+.coPayBtn:hover {
+  background: #1d4ed8;
+}
+
+/* FOOTER */
+
+.coFooter {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.coFooter a {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.coFooter a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* ORDER SUMMARY */
+
+.coSumItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.coSumItem:last-child {
+  border-bottom: none;
+}
+
+.coSumImgWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.coSumImg {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: #f0eeeb;
+  display: block;
+}
+
+.coSumBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--text-muted);
+  color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coSumInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.coSumTitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.coSumMeta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.coSumPrice {
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* GIFT */
+
+.coGiftRow {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.coGiftInput {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text);
+  outline: none;
+}
+
+.coGiftInput:focus {
+  border-color: #aaa;
+}
+
+.coGiftBtn {
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* TOTALS */
+
+.coTotals {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.coTotalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  font-size: 0.875rem;
+}
+
+.final {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.4rem;
+}
+
+.coTotalLbl {
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.coTotalVal {
+  color: var(--text);
+}
+
+.coCur {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-right: 0.2rem;
+}
+
+.coShipNote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .coBody {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .coRight {
+    position: static;
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .coBody {
+    padding: 1.25rem 1rem;
+  }
+  .coFieldRow {
+    grid-template-columns: 1fr;
+  }
+}

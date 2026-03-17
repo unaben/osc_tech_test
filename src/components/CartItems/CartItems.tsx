@@ -1,69 +1,91 @@
-import React, { FC } from "react";
-import Cart from "../CartList/CartList";
-import { Link } from "react-router-dom";
-import { IVariantProduct } from "../../model/interface";
-import OrderSummary from "../OrderSummary/OrderSummary";
-import "./CartItems.css";
-import { allCalculation } from "../../helper/helper";
-import { message } from "../../translate/ENT";
+import { formatCurrency } from "../../utils";
+import type { CartProps } from "./CartItems.types";
+import { getPlaceholderImage } from "../../utils/resolveProductImage";
+import { IconCart, IconTrash } from "../Icons";
+import CartFooter from "./components/CartFooter";
+import styles from "./CartItems.module.css";
 
-type ICartItemProps = {
-  cartStock: IVariantProduct[];
-  setCartStock: React.Dispatch<React.SetStateAction<IVariantProduct[]>>;
-};
+const Cart = (props: CartProps) => {
+  const { items, onClose, onUpdateQty, onRemove, onCheckout } = props;
 
-const CartItems: FC<ICartItemProps> = ({ cartStock, setCartStock }) => {
-  const { itemQty } = allCalculation(cartStock);
-
-  const deleteCartitem = (id: string) => {
-    setCartStock(cartStock.filter((item) => item.id !== id));
-  };
+  const total = items.reduce((sum, i) => sum + i.price, 0);
+  const totalQty = items.reduce((sum, i) => sum + i.quantity, 0);
 
   return (
-    <div className="cart-item-container">
-      <div className="cart-item-frame">
-        <h2 className="upper">{message.yourBag}</h2>
-        <div className="btn-container">
-          <button className="upper btn bg">
-            <Link to="/">
-              {message.continueShopping}
-            </Link>
-          </button>
-          <div className="flexbox">
-            <p className="gap">
-              {message.shoppingBasket} ({itemQty})
-            </p>
-            <p>{message.yourWishList} (0)</p>
-          </div>
-          <button
-            disabled={!cartStock}
-            onClick={() => setCartStock([])}
-            className="upper btn clear-cart-btn"
-          >
-            {message.clearCart}
+    <>
+      <div className={styles["cart-overlay"]} onClick={onClose} />
+      <div className={styles["cart-panel"]}>
+        <div className={styles["cart-header"]}>
+          <h2>
+            Cart{" "}
+            {totalQty > 0 && (
+              <span className={styles["cart-count"]}>{totalQty}</span>
+            )}
+          </h2>
+          <button className={styles["cart-close"]} onClick={onClose}>
+            ✕
           </button>
         </div>
-      </div>
-      <div className="cartList-content">
-        <div className="cartList-container">
-          {cartStock.length === 0 ? (
-            <h2>{message.NoItemInCart}</h2>
+
+        <div className={styles["cart-items"]}>
+          {items.length === 0 ? (
+            <div className={styles["cart-empty"]}>
+              <IconCart />
+              <p>Your cart is empty</p>
+            </div>
           ) : (
-            cartStock?.map((item) => (
-              <Cart
-                key={item.id}
-                item={item}
-                cartStock={cartStock}
-                setCartStock={setCartStock}
-                onDelete={deleteCartitem}
-              />
+            items.map((item) => (
+              <div className={styles["cart-item"]} key={item.variantId}>
+                <div className={styles["cart-item-img"]}>
+                  <img
+                    src={getPlaceholderImage(item.imageColor, item.imageType)}
+                    alt={item.title}
+                  />
+                </div>
+                <div className={styles["cart-item-info"]}>
+                  <div className={styles["cart-item-title"]}>{item.title}</div>
+                  <div className={styles["cart-item-meta"]}>
+                    {[item.size, item.color]
+                      .filter(Boolean)
+                      .map((v) => v!.charAt(0).toUpperCase() + v!.slice(1))
+                      .join("  ·  ")}
+                  </div>
+                  <div className={styles["cart-item-controls"]}>
+                    <div className={styles["cart-item-qty"]}>
+                      <button
+                        className={styles["cart-qty-btn"]}
+                        onClick={() => onUpdateQty(item.variantId, -1)}
+                      >
+                        −
+                      </button>
+                      <span>{item.quantity}</span>
+                      <button
+                        className={styles["cart-qty-btn"]}
+                        onClick={() => onUpdateQty(item.variantId, 1)}
+                      >
+                        +
+                      </button>
+                    </div>
+                    <div className={styles["cart-item-price-content"]}>
+                      <span className={styles["cart-item-price"]}>
+                        {formatCurrency(item.price)}
+                      </span>
+                      <button
+                        className={styles["cart-remove"]}
+                        onClick={() => onRemove(item.variantId)}
+                      >
+                        <IconTrash />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))
           )}
         </div>
-        <OrderSummary cartStock={cartStock} setCartStock={setCartStock} />
+        <CartFooter {...{ items, onCheckout, total }} />
       </div>
-    </div>
+    </>
   );
 };
-
-export default CartItems;
+export default Cart;

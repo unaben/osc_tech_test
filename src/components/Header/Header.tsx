@@ -1,47 +1,144 @@
-import React, { FC } from "react";
-import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-import { IVariantProduct } from "../../model/interface";
-import { allCalculation } from "../../helper/helper";
-import "./Header.css";
-import PromoText from "../PromoText/PromoText";
-import { message } from "../../translate/ENT";
+import { useState } from "react";
+import cn from "classnames";
+import { useLocation, useNavigate } from "react-router-dom";
+import { IconSearch, IconUser, IconCart } from "../Icons";
+import CheckoutNav from "./components/CheckoutNav";
+import type { StoreGender } from "../../types/interface";
+import type { HeaderProps } from "./Header.types";
+import { useQueryParam } from "../../hook";
+import styles from "./Header.module.css";
 
-type IHeaderProps = {
-  cartStock: IVariantProduct[];
-};
-const Header: FC<IHeaderProps> = ({ cartStock }) => {
-  const { itemQty } = allCalculation(cartStock);
+const Header = (props: HeaderProps) => {
+  const { setCartOpen, totalCartQty, setSearchOpen } = props;
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const { setParam: setActiveGender, value: activeGender } =
+    useQueryParam<StoreGender>("gender");
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const genders: StoreGender[] = ["men", "women", "unisex"];
+
+  const path = pathname.split("/")[1];
+
+  const isCheckout = path === "checkout";
+  const isProductPage = path === "product";
+  const isConfirmPage = path === "confirm";
+
+  const isHome = path === "";
+  const isSearch = path === "search";
+
+  const showDesktopNav = isHome;
+
+  const showHamburger = !isCheckout && !isProductPage && !isSearch;
+  const showLogo = !isCheckout;
+  const showActions = !isCheckout;
+
   return (
-    <>
-      <div className="header-container">
-        <div className="display-flex">
-          <Link to={"/"}>
-            <h1>{message.title}</h1>
-          </Link>
-        </div>
-        <div className="display-flex wrapper">
-          <nav>
-            <ul className="display-flex">
-              <li>
-                <Link to="/">{message.store}</Link>
-              </li>
-            </ul>
-          </nav>
-          <button className="add-btn m">
-            <Link to="/cart">
-              <i className="icon">
-                <FaShoppingCart />
-              </i>
-              <span>
-                {message.cart}({itemQty})
-              </span>
-            </Link>
+    <nav className={styles.nav}>
+      {showHamburger && (
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      )}
+
+      {showLogo && (
+        <button
+          onClick={() => navigate("/")}
+          className={styles["nav-logo"]}
+        >
+          LOGN
+        </button>
+      )}
+
+      {showDesktopNav && (
+        <div className={styles["nav-links"]}>
+          {genders.map((g) => (
+            <button
+              key={g}
+              className={cn(styles["nav-link"], {
+                [styles.active]: activeGender === g,
+              })}
+              onClick={() => setActiveGender(g)}
+            >
+              {g.charAt(0).toUpperCase() + g.slice(1)}
+            </button>
+          ))}
+
+          <button className={styles["nav-link"]}>
+            Collections
+          </button>
+
+          <button className={styles["nav-link"]}>
+            News
           </button>
         </div>
-      </div>
-      <PromoText />
-    </>
+      )}
+
+      {showActions && (
+        <div className={styles["nav-actions"]}>
+          {!isConfirmPage && (
+            <button
+              className={styles["nav-btn"]}
+              onClick={() => setSearchOpen(true)}
+            >
+              <IconSearch />
+            </button>
+          )}
+
+          <button className={styles["nav-btn"]}>
+            <IconUser />
+          </button>
+
+          <button
+            className={styles["nav-btn"]}
+            onClick={() => setCartOpen(true)}
+          >
+            <IconCart />
+
+            {totalCartQty > 0 && (
+              <span className={styles["cart-badge"]}>
+                {totalCartQty}
+              </span>
+            )}
+          </button>
+        </div>
+      )}
+
+      {menuOpen && (
+        <div className={styles.mobileMenu}>
+          {genders.map((g) => (
+            <button
+              key={g}
+              className={styles.mobileLink}
+              onClick={() => {
+                setActiveGender(g);
+                setMenuOpen(false);
+              }}
+            >
+              {g.charAt(0).toUpperCase() + g.slice(1)}
+            </button>
+          ))}
+
+          <button className={styles.mobileLink}>
+            Collections
+          </button>
+
+          <button className={styles.mobileLink}>
+            News
+          </button>
+        </div>
+      )}
+
+      {isCheckout && <CheckoutNav />}
+    </nav>
   );
 };
 

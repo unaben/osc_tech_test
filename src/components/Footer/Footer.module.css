@@ -1,0 +1,282 @@
+
+.footer {
+    background: var(--text);
+    color: #fff;
+    font-family: var(--font-body);
+  }
+  
+  /* ── Top band ── */
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 3rem 3.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  /* ── Brand column ── */x
+  .footer-logo {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.45);
+    max-width: 230px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Newsletter */
+  .footer-newsletter-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 0.55rem;
+  }
+
+  .footer-newsletter-form {
+    display: flex;
+  }
+
+  .footer-newsletter-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.7rem 0.9rem;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-right: none;
+    border-radius: var(--radius) 0 0 var(--radius);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    outline: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .footer-newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.28);
+  }
+
+  .footer-newsletter-input:focus {
+    background: rgba(255, 255, 255, 0.11);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-newsletter-btn {
+    padding: 0.7rem 1rem;
+    background: #fff;
+    color: var(--text);
+    border: none;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s, opacity 0.2s;
+  }
+
+  .footer-newsletter-btn:hover {
+    background: rgba(255, 255, 255, 0.87);
+  }
+
+  .footer-newsletter-success {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  /* ── Link columns ── */
+  .footer-col-title {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 1.1rem;
+  }
+
+  .footer-col-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .footer-col-links li button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.18s;
+    position: relative;
+  }
+
+  .footer-col-links li button::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.2s ease;
+  }
+
+  .footer-col-links li button:hover {
+    color: #fff;
+  }
+
+  .footer-col-links li button:hover::after {
+    width: 100%;
+  }
+  
+  /* ── Bottom band ── */
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 3rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.28);
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-legal button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+    transition: color 0.18s;
+  }
+
+  .footer-legal button:hover {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  /* Social + locale row */
+  .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 0.45rem;
+  }
+
+  .footer-social-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.45);
+    transition: background 0.18s, color 0.18s, border-color 0.18s;
+  }
+
+  .footer-social-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .footer-locale-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    padding: 0;
+    transition: color 0.18s;
+  }
+  .footer-locale-btn:hover {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  /* ── Divider between top/bottom ── */
+  .footer-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  /* ── Responsive ── */
+  @media (max-width: 960px) {
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem 3rem;
+      padding: 3rem 2rem 2.5rem;
+    }
+    .footer-brand-col {
+      grid-column: 1 / -1;
+    }
+    .footer-tagline {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2.5rem 1.25rem 2rem;
+    }
+    .footer-brand-col {
+      grid-column: 1 / -1;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.25rem;
+      gap: 1.25rem;
+    }
+    .footer-bottom-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }

@@ -57,7 +57,6 @@ const Footer = ({ columns = DEFAULT_COLUMNS, onNavigate }: FooterProps) => {
   return (
     <footer className={styles["footer"]}>
       <div className={styles["footer-top"]}>
-        {/* ── Brand + newsletter ── */}
         <div className={styles["footer-brand-col"]}>
           <span className={styles["footer-logo"]}>LOGN</span>
           <p className={styles["footer-tagline"]}>
@@ -102,8 +101,6 @@ const Footer = ({ columns = DEFAULT_COLUMNS, onNavigate }: FooterProps) => {
             </form>
           )}
         </div>
-
-        {/* ── Link columns ── */}
         {columns.map((col) => (
           <div key={col.title}>
             <div className={styles["footer-col-title"]}>{col.title}</div>
@@ -141,7 +138,6 @@ const Footer = ({ columns = DEFAULT_COLUMNS, onNavigate }: FooterProps) => {
         </div>
 
         <div className={styles["footer-bottom-right"]}>
-          {/* Social */}
           <div className={styles["footer-social"]} aria-label="Social media">
             {[
               { icon: <IconInstagram />, label: "Instagram" },
@@ -158,8 +154,6 @@ const Footer = ({ columns = DEFAULT_COLUMNS, onNavigate }: FooterProps) => {
               </button>
             ))}
           </div>
-
-          {/* Locale */}
           <button
             className={styles["footer-locale-btn"]}
             aria-label="Change language or region"

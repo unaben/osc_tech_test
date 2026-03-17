@@ -5,9 +5,9 @@ const ShippingMethod = () => {
     <div className={styles.coSection}>
       <div className={styles.coSectionTitle}>Shipping method</div>
 
-      <div className={styles.coShippingPlaceholder}>
+      <p className={styles.coShippingPlaceholder}>
         Enter your shipping address to view available shipping methods.
-      </div>
+      </p>
     </div>
   );
 };

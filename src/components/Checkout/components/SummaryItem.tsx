@@ -20,7 +20,7 @@ const SummaryItem = ({ item }: { item: CartItem }) => {
         <div className={styles.coSumTitle}>{item.title}</div>
 
         <div className={styles.coSumMeta}>
-          {formatVariantMeta(item.size, item.color)}
+          <p>{formatVariantMeta(item.size, item.color)}</p>
         </div>
       </div>
 

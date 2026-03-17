@@ -17,11 +17,7 @@ const DetailImages = (props: DetailImagesProps) => {
           <img key={i} src={imgSrc(img)} alt={`${product.title} ${i + 1}`} />
         ))}
       {displayImages.length === 1 && (
-        <img
-          src={imgSrc(displayImages[0])}
-          alt={product.title}
-          style={{ opacity: 0.5, filter: "grayscale(0.3)" }}
-        />
+        <img src={imgSrc(displayImages[0])} alt={product.title} />
       )}
     </div>
   );

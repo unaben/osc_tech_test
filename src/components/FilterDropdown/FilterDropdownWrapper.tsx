@@ -8,7 +8,6 @@ type Props = {
 const FilterDropdownWrapper = ({ children }: Props) => {
   return (
     <div
-      style={{ position: "relative" }}
       className={styles.srFilterDropdownWrapper}
     >
       {children}

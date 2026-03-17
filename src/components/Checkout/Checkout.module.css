@@ -348,6 +348,11 @@
   background: var(--surface);
 }
 
+.coSaveBox span {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
 .coSaveLabel {
   font-size: 0.875rem;
   font-weight: 500;

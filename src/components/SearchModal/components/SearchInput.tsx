@@ -19,9 +19,8 @@ const SearchInput = (props: SearchInputProps) => {
       />
       {query && (
         <button
-        className={styles.searchDismissBtn}
+          className={styles.searchDismissBtn}
           onClick={() => setQuery("")}
-          style={{ fontSize: "0.8rem", marginRight: "0.25rem" }}
         >
           Clear
         </button>

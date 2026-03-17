@@ -59,6 +59,8 @@
   aspect-ratio: 1;
   object-fit: cover;
   background: var(--img-placeholder);
+  opacity: 0.5;
+  filter: grayscale(0.3);
 }
 
 /* ---------- RIGHT PANEL ---------- */
@@ -361,7 +363,6 @@
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 900px) {
-
   .container {
     flex-direction: column;
     height: auto;
@@ -379,11 +380,9 @@
     position: relative;
     overflow: visible;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .detail-images {
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -396,5 +395,4 @@
   .add-btn {
     width: 100%;
   }
-
 }

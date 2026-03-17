@@ -58,11 +58,12 @@
   border: none;
   cursor: pointer;
   color: var(--text-muted);
-  font-size: 1.3rem;
   line-height: 1;
   padding: 2px;
   transition: color var(--transition);
   flex-shrink: 0;
+  font-size: 0.8rem;
+  margin-right: 0.25rem;
 }
 
 .searchDismissBtn:hover {

@@ -5,17 +5,17 @@ const SaveInfo = () => {
   return (
     <div className={styles.coSection}>
       <div className={styles.coSectionTitle}>
-        Save my information for a faster checkout
+        <p>Save my information for a faster checkout</p>
       </div>
 
       <div className={styles.coSaveBox}>
-        <span style={{ color: "var(--text-muted)", flexShrink: 0 }}>
+        <span >
           <IconPhone />
         </span>
 
         <div>
-          <div className={styles.coSaveLabel}>Mobile phone (optional)</div>
-          <div className={styles.coSaveSub}>+44</div>
+          <div className={styles.coSaveLabel}><p>Mobile phone (optional)</p></div>
+          <div className={styles.coSaveSub}><p>+44</p></div>
         </div>
       </div>
 

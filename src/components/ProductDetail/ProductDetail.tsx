@@ -25,6 +25,7 @@ import useHandleOnAddToCart, {
 } from "./hooks/useHandleOnAddToCart";
 import styles from "./ProductDetail.module.css";
 import { formatCurrency } from "../../utils";
+import scrollToTop from "../../utils/scrollToTop";
 
 const ProductDetail = (props: ProductDetailsProps) => {
   const { onAddToCart, allProducts } = props;
@@ -105,18 +106,14 @@ const ProductDetail = (props: ProductDetailsProps) => {
       </div>
       <div className={styles["detail-body"]}>
         <h2 className={styles["detail-title"]}>{product.title}</h2>
-        <div
-          className={styles["detail-price"]}
-        >
+        <div className={styles["detail-price"]}>
           {variant ? formatCurrency(variant.price.amount) : ""}
           {variant?.compareAtPrice && (
             <s>{formatCurrency(variant.compareAtPrice.amount)}</s>
           )}
         </div>
         {variant?.inventoryStatus === "in_stock" && (
-          <span className={cn(styles["stock-badge"], styles.in)}>
-            In Stock
-          </span>
+          <span className={cn(styles["stock-badge"], styles.in)}>In Stock</span>
         )}
         {variant?.inventoryStatus === "low_stock" && (
           <span className={cn(styles["stock-badge"], styles.low)}>
@@ -150,7 +147,10 @@ const ProductDetail = (props: ProductDetailsProps) => {
 
         <button
           className={styles["add-btn"]}
-          onClick={() => handleOnAddToCart(onAddToCartArgs as OnAddToCartArgs)}
+          onClick={() => {
+            handleOnAddToCart(onAddToCartArgs as OnAddToCartArgs);
+            scrollToTop();
+          }}
           disabled={!canAdd}
         >
           <IconCartAdd /> Add to cart

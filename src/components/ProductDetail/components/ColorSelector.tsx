@@ -1,6 +1,7 @@
 import cn from "classnames";
 import { COLOR_MAP } from "../../../utils/resolveProductImage";
 import styles from "../ProductDetail.module.css";
+import scrollToTop from "../../../utils/scrollToTop";
 
 type ColorSelectorProps = {
   colors: string[];
@@ -31,6 +32,7 @@ const ColorSelector = (props: ColorSelectorProps) => {
             onClick={() => {
               setSelectedColor(c);
               setSelectedSize(undefined);
+              scrollToTop()
             }}
           />
         ))}

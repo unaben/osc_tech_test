@@ -11,6 +11,7 @@
 
   @media (max-width: 600px) {
     padding: 0 1rem;
+    align-items: center;
   }
 }
 

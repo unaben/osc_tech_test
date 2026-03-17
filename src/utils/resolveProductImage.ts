@@ -1,13 +1,6 @@
 import { productImages } from "../productImages";
 import { productImageMap } from "./productImageMap";
 
-/**
-So the flow is:
-```
-color + imageType  →  key  →  productImageMap[key]  →  imageKey  →  images[imageKey]  →  "/images/GreenHoodie01.webp"
-"green"+"hoodie"     "green_hoodie"   "GreenHoodie01"              "/images/GreenHoodie01.webp"
-*/
-
 export const COLOR_MAP: Record<string, string> = {
   green: "#3d6b4f", red: "#b94040", clay: "#a0714f", ocean: "#3d7a8a",
   purple: "#6b4fa0", grey: "#808080", gray: "#808080",

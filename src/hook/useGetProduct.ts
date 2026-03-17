@@ -16,7 +16,6 @@ const useGetProduct = (productId: string): UseProductResult => {
   const { data, isLoading, isFetching, error, refetch } = useQuery({
     queryKey: queryKeys.products.all,
     queryFn: fetchProducts,
-    // Derive the single product from the cached list response
     select: (res) => {
         return res.products.find((p) => p.id === productId);
       },

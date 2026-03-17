@@ -30,8 +30,6 @@ export interface ProductVariant {
   price: ProductPrice;
   compareAtPrice?: ProductPrice;
 }
-
-// Computed stock summary, added dynamically to each Product
 export interface ProductStock {
   availableStock: number; 
   inStock: boolean;      

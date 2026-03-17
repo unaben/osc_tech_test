@@ -1,7 +1,7 @@
 
 import { useQuery } from "@tanstack/react-query";
-import { queryKeys } from "../lib/queryKeys";
-import type { Product } from "../model/interface";
+import { queryKeys } from "../config/queryKeys";
+import type { Product } from "../types/interface";
 import fetchProducts from "../api/fetchProducts";
 
 interface UseProductResult {
@@ -18,7 +18,6 @@ const useGetProduct = (productId: string): UseProductResult => {
     queryFn: fetchProducts,
     // Derive the single product from the cached list response
     select: (res) => {
-        console.log("select res:", res);
         return res.products.find((p) => p.id === productId);
       },
   });

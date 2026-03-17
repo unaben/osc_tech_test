@@ -1,12 +1,12 @@
-import type {  ProductImageKey } from "../productImages";
+import type { ProductImageKey } from "../productImages";
 
-export const productImageMap: Record<string,  ProductImageKey> = {
+export const productImageMap: Record<string, ProductImageKey> = {
   // Hoodies
   green_hoodie: "GreenHoodie01",
   red_hoodie: "RedHoodie01",
   clay_hoodie: "ClayHoodie01",
-  ocean_hoodie: 'OceanHoodie01',
-  purple_hoodie: 'PurpleHoodie01',
+  ocean_hoodie: "OceanHoodie01",
+  purple_hoodie: "PurpleHoodie01",
 
   // T-Shirts
   green_tshirt: "GreenTshirt01",
@@ -14,6 +14,13 @@ export const productImageMap: Record<string,  ProductImageKey> = {
   clay_tshirt: "ClayTshirt01",
   ocean_tshirt: "OceanTshirt01",
   purple_tshirt: "PurpleTshirt01",
+
+  // men's Crew
+  green_menscrew: "GreenMenscrew01",
+  red_menscrew: "RedMenscrew01",
+  clay_menscrew: "ClayMenscrew01",
+  ocean_menscrew: "OceanMenscrew01",
+  purple_menscrew: "PurpleMenscrew01",
 
   // Women's Crew
   green_womenscrew: "GreenWomenscrew01",
@@ -33,7 +40,6 @@ export const productImageMap: Record<string,  ProductImageKey> = {
   clay_workoutshirt: "ClayWorkoutShirt",
   ocean_workoutshirt: "OceanWorkoutShirt",
   purple_workoutshirt: "PurpleWorkoutShirt",
-  grey_workoutshirt: "GreenWorkoutShirt", // no grey variant, fallback
 
   // Sweatpants
   green_sweatpants: "GreenSweatpants01",
@@ -83,5 +89,5 @@ export const productImageMap: Record<string,  ProductImageKey> = {
   seethrough_sunglasses: "Seethroughsunnies",
 
   // Slides
-  slides: "Slides",
+  black_slides: "Slides",
 };

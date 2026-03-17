@@ -51,8 +51,13 @@ export const productImages = {
     RedWomenscrew01: "/images/RedWomenscrew01.webp",
     RedWorkoutShirt: "/images/RedWorkoutShirt.webp",
     Seethroughsunnies: "/images/Seethroughsunnies.webp",
-    Slides: "/images/slides.webp",
+    Slides: "/images/Slides.webp",
     Whiteleathersneakers01: "/images/Whiteleathersneakers01.webp",
+    GreenMenscrew01: '/images/GreenMenscrew01.webp',
+    PurpleMenscrew01: '/images/RedMenscrew01.webp',
+    ClayMenscrew01: '/images/ClayMenscrew01.webp',
+    RedMenscrew01: '/images/RedMenscrew01.webp',
+    OceanMenscrew01: '/images/OceanMenscrew01.webp',
   } as const;
   
   export type ProductImageKey = keyof typeof productImages;

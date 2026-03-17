@@ -1,38 +1,69 @@
-import React from "react";
-import { IVariantProduct } from "../../model/interface";
-import { useLocalStorage } from "../../hook/useLocalStorage";
+import { Routes } from "react-router-dom";
+import Cart from "../CartItems/CartItems";
 import Header from "../Header/Header";
-import { Route, Routes } from "react-router-dom";
-import ProductsList from "../ProductsList/ProductsList";
-import ProductDetail from "../ProductDetail/ProductDetail";
-import CartItems from "../CartItems/CartItems";
-import "./AppRoutes.css";
-import Checkout from "../Checkout/Checkout";
+import SearchModal from "../SearchModal/SearchModal";
+import Footer from "../Footer/Footer";
+import styles from "./AppRoutes.module.css";
+import useAppRoute from "./hooks/useAppRoutes";
 
 const AppRoutes = () => {
-  const [cartStock, setCartStock] = useLocalStorage<IVariantProduct[]>(
-    "cart",
-    []
-  );
+  const {
+    routes,
+    cartOpen,
+    cartItems,
+    setCartOpen,
+    handleUpdateQty,
+    handleRemove,
+    searchOpen,
+    products,
+    recentlyViewed,
+    setSearchOpen,
+    setRecentlyViewed,
+    handleSelectProduct,
+    setSearchQuery,
+    navigate,
+  } = useAppRoute();
+
+  const totalCartQty = cartItems.reduce((s, i) => s + i.quantity, 0);
+
   return (
-    <div className="app-route-container">
-      <Header cartStock={cartStock} />
-      <Routes>
-        <Route path="/" element={<ProductsList />} />
-        <Route
-          path="/details/:productId"
-          element={
-            <ProductDetail cartStock={cartStock} setCartStock={setCartStock} />
-          }
+    <div className={styles.container}>
+      <Header setCartOpen={setCartOpen} setSearchOpen={setSearchOpen} totalCartQty={totalCartQty} />
+
+      <Routes>{routes}</Routes>
+
+      {cartOpen && (
+        <Cart
+          items={cartItems}
+          onClose={() => setCartOpen(false)}
+          onUpdateQty={handleUpdateQty}
+          onRemove={handleRemove}
+          onCheckout={() => {
+            setCartOpen(false);
+            navigate("/checkout");
+          }}
         />
-        <Route
-          path="/cart"
-          element={
-            <CartItems cartStock={cartStock} setCartStock={setCartStock} />
-          }
+      )}
+
+      {searchOpen && (
+        <SearchModal
+          allProducts={products ?? []}
+          recentlyViewed={recentlyViewed}
+          onClose={() => setSearchOpen(false)}
+          onSelectProduct={(p) => {
+            handleSelectProduct(p);
+            setSearchOpen(false);
+          }}
+          onClearRecent={() => setRecentlyViewed([])}
+          onViewAll={(q) => {
+            setSearchQuery(q);
+            navigate("/search");
+            setSearchOpen(false);
+          }}
         />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
+      )}
+
+      <Footer />
     </div>
   );
 };

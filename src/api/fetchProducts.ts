@@ -1,5 +1,5 @@
-import type { ProductsResponse } from "../model/interface";
-import { enrichProducts } from "./utils/enrichProduct";
+import type { ProductsResponse } from "../types/interface";
+import { attachStockToProducts } from "./utils/productStock";
 
 const PRODUCTS_URL = "/products.json";
 
@@ -12,9 +12,7 @@ export const fetchProducts = async (): Promise<ProductsResponse> => {
   }
 
   const json: ProductsResponse = await res.json();
-  console.log("fetchProducts json:", json);
-  const products = enrichProducts(json.products);
-  console.log("fetchProducts products:", products);
+  const products = attachStockToProducts(json.products);
 
   return {
     products,

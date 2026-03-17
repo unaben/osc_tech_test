@@ -1,7 +1,7 @@
 
 import { useQuery } from "@tanstack/react-query";
-import { queryKeys } from "../lib/queryKeys";
-import type { ProductsResponse } from "../model/interface";
+import { queryKeys } from "../config/queryKeys";
+import type { ProductsResponse } from "../types/interface";
 import fetchProducts from "../api/fetchProducts";
 
 interface UseProductsResult {

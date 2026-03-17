@@ -1,4 +1,4 @@
-import type { Product } from "../model/interface";
+import type { Product } from "../types/interface";
 import fetchProducts from "./fetchProducts";
 
 export const fetchProduct = async (productId: string): Promise<Product> => {

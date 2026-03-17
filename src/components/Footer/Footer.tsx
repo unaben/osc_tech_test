@@ -65,7 +65,7 @@ const Footer = ({ columns = DEFAULT_COLUMNS, onNavigate }: FooterProps) => {
           </p>
 
           <div className={styles["footer-newsletter-label"]}>
-            Stay in the loop
+            <p>Stay in the loop</p>
           </div>
           {subscribed ? (
             <div className={styles["footer-newsletter-success"]}>

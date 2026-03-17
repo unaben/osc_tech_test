@@ -18,11 +18,11 @@ const RelatedProducts = (props: RelatedProductsProps) => {
   return (
     <div className={styles["related-section"]}>
       <div className={styles["related-title"]}>You may also like</div>
-      <div className={styles["related-grid"]}>
+      <ul className={styles["related-grid"]}>
         {relatedProduct.map((p) => {
           const price = p.variants[0]?.price;
           return (
-            <div
+            <li
               key={p.id}
               className={styles["related-card"]}
               onClick={() => navigate(`/product/${p.id}`)}
@@ -41,14 +41,14 @@ const RelatedProducts = (props: RelatedProductsProps) => {
                 <div className={styles["related-card-title"]}>{p.title}</div>
                 {price && (
                   <div className={styles["related-card-price"]}>
-                    {formatCurrency(price.amount)}
+                    <p>{formatCurrency(price.amount)}</p>
                   </div>
                 )}
               </div>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };

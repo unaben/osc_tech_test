@@ -1,0 +1,54 @@
+.srFilterDropdownWrapper {
+    position: relative;
+  }
+  
+  .srFilterBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .srFilterBtn:hover {
+    border-color: var(--text);
+  }
+  
+  .srFilterBtn svg {
+    width: 12px;
+    height: 12px;
+    transition: transform var(--transition);
+  }
+  
+  .srFilterBtn.open svg {
+    transform: rotate(180deg);
+  }
+  
+  .srFilterBtn.active {
+    background: var(--text);
+    color: #fff;
+    border-color: var(--text);
+  }
+  
+  .srDropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 200;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    padding: 0.5rem 0;
+    animation: slideDownFade 0.15s ease;
+  }

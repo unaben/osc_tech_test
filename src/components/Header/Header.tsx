@@ -23,18 +23,14 @@ const Header = (props: HeaderProps) => {
 
   const path = pathname.split("/")[1];
 
-  const isCheckout = path === "checkout";
-  const isProductPage = path === "product";
+  const isCheckoutPage = path === "checkout";
   const isConfirmPage = path === "confirm";
+  const isHomePage = path === "";
 
-  const isHome = path === "";
-  const isSearch = path === "search";
-
-  const showDesktopNav = isHome;
-
-  const showHamburger = !isCheckout && !isProductPage && !isSearch;
-  const showLogo = !isCheckout;
-  const showActions = !isCheckout;
+  const showDesktopNav = isHomePage;
+  const showHamburger = isHomePage
+  const showLogo = !isCheckoutPage;
+  const showActions = !isCheckoutPage;
 
   return (
     <nav className={styles.nav}>
@@ -50,10 +46,7 @@ const Header = (props: HeaderProps) => {
       )}
 
       {showLogo && (
-        <button
-          onClick={() => navigate("/")}
-          className={styles["nav-logo"]}
-        >
+        <button onClick={() => navigate("/")} className={styles["nav-logo"]}>
           LOGN
         </button>
       )}
@@ -72,13 +65,9 @@ const Header = (props: HeaderProps) => {
             </button>
           ))}
 
-          <button className={styles["nav-link"]}>
-            Collections
-          </button>
+          <button className={styles["nav-link"]}>Collections</button>
 
-          <button className={styles["nav-link"]}>
-            News
-          </button>
+          <button className={styles["nav-link"]}>News</button>
         </div>
       )}
 
@@ -104,9 +93,7 @@ const Header = (props: HeaderProps) => {
             <IconCart />
 
             {totalCartQty > 0 && (
-              <span className={styles["cart-badge"]}>
-                {totalCartQty}
-              </span>
+              <span className={styles["cart-badge"]}>{totalCartQty}</span>
             )}
           </button>
         </div>
@@ -127,17 +114,13 @@ const Header = (props: HeaderProps) => {
             </button>
           ))}
 
-          <button className={styles.mobileLink}>
-            Collections
-          </button>
+          <button className={styles.mobileLink}>Collections</button>
 
-          <button className={styles.mobileLink}>
-            News
-          </button>
+          <button className={styles.mobileLink}>News</button>
         </div>
       )}
 
-      {isCheckout && <CheckoutNav />}
+      {isCheckoutPage && <CheckoutNav />}
     </nav>
   );
 };

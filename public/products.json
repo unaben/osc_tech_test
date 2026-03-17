@@ -947,7 +947,7 @@
       ],
       "variants": [
         {
-          "id": "sku_wc_s",
+          "id": "sku_wc_green_s",
           "size": "S",
           "color": "green",
           "stock": 6,
@@ -955,7 +955,7 @@
           "price": { "amount": 120.99, "currencyCode": "USD" }
         },
         {
-          "id": "sku_wc_m",
+          "id": "sku_wc_green_m",
           "size": "M",
           "color": "green",
           "stock": 27,
@@ -963,7 +963,7 @@
           "price": { "amount": 120.99, "currencyCode": "USD" }
         },
         {
-          "id": "sku_wc_s",
+          "id": "sku_wc_red_s",
           "size": "S",
           "color": "red",
           "stock": 20,
@@ -971,7 +971,7 @@
           "price": { "amount": 120.99, "currencyCode": "USD" }
         },
         {
-          "id": "sku_wc_m",
+          "id": "sku_wc_red_m",
           "size": "M",
           "color": "red",
           "stock": 17,
@@ -979,7 +979,7 @@
           "price": { "amount": 120.99, "currencyCode": "USD" }
         },
         {
-          "id": "sku_wc_s",
+          "id": "sku_wc_clay_s",
           "size": "S",
           "color": "clay",
           "stock": 10,
@@ -987,11 +987,27 @@
           "price": { "amount": 120.99, "currencyCode": "USD" }
         },
         {
-          "id": "sku_wc_m",
+          "id": "sku_wc_purple_m",
           "size": "M",
           "color": "purple",
           "stock": 3,
           "inventoryStatus": "low_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_purple_s",
+          "size": "S",
+          "color": "purple",
+          "stock": 0,
+          "inventoryStatus": "out_of_stock",
+          "price": { "amount": 120.99, "currencyCode": "USD" }
+        },
+        {
+          "id": "sku_wc_ocean_s",
+          "size": "S",
+          "color": "ocean",
+          "stock": 0,
+          "inventoryStatus": "out_of_stock",
           "price": { "amount": 120.99, "currencyCode": "USD" }
         }
       ]
